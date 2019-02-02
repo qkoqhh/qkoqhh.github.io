@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title>debug</title>
-      <link href="/debug/"/>
-      <url>/debug/</url>
+      <title>hexo瞎猴日记一</title>
+      <link href="/hexo1/"/>
+      <url>/hexo1/</url>
       
-        <content type="html"><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1>]]></content>
+        <content type="html"><![CDATA[<p>这个blog其实大一在科协例会的时候就做了一下，弄到hello world和学习了一下markdown之后就没再弄过了，至于为什么要重新来弄这个是因为这个CSDN真的是emmmmm</p><p>于是这里顺便发一下前任博客的链接<a href="https://blog.csdn.net/qkoqhh" target="_blank" rel="noopener">https://blog.csdn.net/qkoqhh</a></p><p>当时搭这博客的细节也忘得差不多了，流程大概是按照<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a>来的，记得是装某个东西的时候有点问题？</p><p>主题选的是<a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank" rel="noopener">Aria</a>，感谢作者<a href="http://aria.ismyonly.one/" target="_blank" rel="noopener">AlynxZhou</a>，做得真的不错，实用性也很强！</p><p>然后根据自己的需求做了点修改</p><p>第一个是标题前面的#，这个的作用其实已经和文章目录有点重复了，反而可能会有点比较突兀，所以就想去掉</p><p>直接查看#的元素，发现他的类是headerlink，于是用grep在模板里面找到包含headerlink的文件，发现只有aria/source/css/post.styl有，于是删掉如下代码段就可以去掉了：</p><figure class="hljs highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs css">  .post-main &#123;<br>    a.headerlink &#123;<br>      border: none;<br>      &amp;:hover &#123;<br>        border: none;<br>      &#125;<br>      &amp;:active &#123;<br>        top: 0;<br>      &#125;<br>      &amp;::before &#123;<br>        content: "#";<br>        margin-right: 0.3em;<br>      &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>当然其实应该可以做得更好，比如用好看一点的图片来代替#可能效果会更加不错，以后有时间可以来改改</p><p>另一个比较大的问题是hexo自身的问题（这个问题差点让窝弃了hexo），关于分类的，由于hexo不支持同级分类，所以今后窝如果要写一些类别有交叉的文章可能就会比较尴尬。</p><p>由于这是hexo自身的特性根本就没有办法改变，所以分类功能只能弃用。代替他的是标签，用标签的话就可以不用拘泥于严格的类别次序，但是这些标签是不能确定主次或者包含关系的，这个缺点比分类的好接受多了，毕竟大部分博客也是都这样的。</p><p>使用标签带来的问题是主题默认使用的tag-cloud窝认为是比较华而不实的，散乱的排列，仅靠大小来判定该分类的大小实在是emmmm</p><p>所以还是想弄成传统的标签，然而缺少知识的窝并不造怎么弄。决定去学一手<a href="http://tokitsukaze.live" target="_blank" rel="noopener">tokitsukaze的博客</a>，发现可以用tag-list（这个在手册上的辅助函数里有可窝当时并没有看懂？），然后仿照原来的tag-cloud的格式生成了tag-list。然后发现标签和数目并在一起相当难看，所以又去学了一首调节字体颜色大小，等调节完发现只能改数字，不能改标签，因为标签是个链接？！之后试了很多方法都没用。。只能妥协。。最后仿造了分类的配色方案将数字的颜色调了一下。。这个问题其实还是没有完全解决qaq</p><p>另外有个小问题就是，文章摘要貌似只能按字数来算，然后不巧有篇文章开头就是图片，再加上图片大小的调整窝现在也没解决，所以那篇文章的前100字数已经占据了一页。。仔细一想其实窝好像从来就没有看过或者写过摘要（标题党），所以摘要对窝来说确实无关紧要（而且以后的文章中摘要说不定是题意= =），所以直接把摘要去了，把theme里面的_config.yml的auto_excerpt改成如下：</p><figure class="hljs highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">auto_excerpt:</span><br><span class="hljs-attr">    enable:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">    length:</span> <span class="hljs-number">0</span><br></code></pre></td></tr></table></figure>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -30,19 +36,6 @@
             <tag> stg </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>qaq</title>
-      <link href="/qaq/"/>
-      <url>/qaq/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
       
     </entry>
     
