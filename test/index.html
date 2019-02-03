@@ -80,6 +80,27 @@
     </script>
     
     
+    
+    <script defer type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ["$","$"], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+      }
+    });
+    </script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += " has-jax";
+      }
+    });
+    </script>
+    
+    
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
@@ -195,7 +216,7 @@
 </blockquote>
 </li>
 </ul>
-<p>贴代码：<br><figure class="hljs highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inc(i,l,r) for(int i=l;i&lt;=r;i++)</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> <span class="number">0</span>;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>贴代码：<br><figure class="hljs highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> inc(i,l,r) for(int i=l;i&lt;=r;i++)</span><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;&#125;<br></code></pre></td></tr></table></figure></p>
 <p>试试分割线</p>
 <hr>
 <hr>
@@ -212,7 +233,9 @@
 <li>编辑时直接刷新页面就可以看到效果了。。</li>
 <li>preview硬换行好像只有一个缩进的效果，要换行必须用软换行。。而hexo好像软硬通吃。。所以preview少用吧。。</li>
 </ol>
-<p>顺势学学绝对路径插入图片<br><img src="https://dn-Myg6wSTV.qbox.me/14868d18eabae4a6fbb5.jpg" alt=""><br>emmmm好像不能设置图片大小呀。。以后再找解决方案吧。。。<br>自己的本地文件要上传到github再获取链接才行。。。这里还顺便再图片上弄了个链接<br><a href="http://blog.csdn.net/qkoqhh" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/qkoqhh/picture/master/resource/0bc564cb0a46f21f44e52200f1246b600d33aea4.jpg" alt=""> </a><br>文字强调？？<br><em>qkoqhh</em><br><em>qkoqhh</em><br><strong>qkoqhh</strong><br><strong>qkoqhh</strong><br>emmmm2个*或_就是粗体。。1个就话就是斜体。。</p>
+<p>顺势学学绝对路径插入图片<br><img src="https://dn-Myg6wSTV.qbox.me/14868d18eabae4a6fbb5.jpg" alt=""><br>emmmm好像不能设置图片大小呀。。以后再找解决方案吧。。。<br>自己的本地文件要上传到github再获取链接才行。。。这里还顺便再图片上弄了个链接<br><a href="http://blog.csdn.net/qkoqhh" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/qkoqhh/picture/master/resource/0bc564cb0a46f21f44e52200f1246b600d33aea4.jpg" alt=""> </a></p>
+<p>（然后emmmm图片来源其实早都没了</p>
+<p>文字强调？？<br><em>qkoqhh</em><br><em>qkoqhh</em><br><strong>qkoqhh</strong><br><strong>qkoqhh</strong><br>emmmm2个*或_就是粗体。。1个就话就是斜体。。</p>
 <p>标记一小段代码？？用 ‘return 0;’ 就好了耶0v0</p>
 
     </main>
@@ -270,7 +293,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">4</a></div>
+      <div><a href="/archives/">5</a></div>
     </div>
     
     
@@ -352,7 +375,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">qkoqhh</span><span class="year"><i class="far fa-copyright"></i>2019</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">BY 4.0</a></span>
+          <span class="author">qkoqhh</span><span class="year"><i class="far fa-copyright"></i>2019</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
         </div>
         
         <div class="busuanzi">
