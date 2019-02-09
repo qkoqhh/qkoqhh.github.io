@@ -104,7 +104,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>hexo2 | qkoqhh - for testing</title>
+    <title>hexo瞎猴日记二 | qkoqhh - 什么都没有</title>
   </head>
   <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -113,7 +113,7 @@
     <div class="header-container">
       <div class="header-title">
         <h1 class="title"><a href="/">qkoqhh</a></h1>
-        <h2 class="subtitle">for testing</h2>
+        <h2 class="subtitle">什么都没有</h2>
       </div>
       
       <div class="logo">
@@ -130,6 +130,8 @@
         <li role="menuitem"><a href="/archives/">归档</a></li>
         
         <li role="menuitem"><a href="/tags/">标签</a></li>
+        
+        <li role="menuitem"><a href="/about/">关于</a></li>
         
       </ul>
     </nav>
@@ -149,7 +151,7 @@
       <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexo2/">
       <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
        <meta itemprop="name" content="qkoqhh">
-       <meta itemprop="description" content="try a try">
+       <meta itemprop="description" content="已陷入幻想">
        <meta itemprop="image" content="/images/avatar.jpg">
       </span>
       <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -157,7 +159,7 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">hexo2</h1>
+      <h1 class="post-title" itemprop="name headline">hexo瞎猴日记二</h1>
       <div class="post-meta">
         
         <span class="post-date">
@@ -166,11 +168,29 @@
         
         
         
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i><span><a href="/hexo2/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="hexo2/" itemprop="commentCount"></span></a></span>
+        </span>
+        
+        
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p>latex的支持和将以前的blog英文内容全用tex代替</p>
-<p>orderby :”length”</p>
+      <h3 id="latex支持"><a href="#latex支持" class="headerlink" title="latex支持"></a>latex支持</h3><p>这个要个CDN(然而窝又不造是什么)，随便百度上拉来一个能用就行，不过貌似效果略差？</p>
+<p>代码如下：</p>
+<figure class="hljs highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">mathjax:</span><br><span class="hljs-attr">  enable:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  global:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">  cdn:</span> <span class="hljs-attr">https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span><br></code></pre></td></tr></table></figure>
+<p><br></p>
+<h3 id="背景图-留坑"><a href="#背景图-留坑" class="headerlink" title="背景图(留坑)"></a>背景图(留坑)</h3><p>背景图的设置可以从$themes$文件夹下的$source/css/custom.styl$下去设置(前提是主题的作者很好心地给泥设置了这个选项)，然后仿照下面的代码去把背景设置一下就可以</p>
+<figure class="hljs highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs stylus">body&#123;<br>    background-image:url(/images/background.jpg);<br>    background-attachment:fixed;<br>    background-repeat:repeat;<br>    background-size:contain;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>但是这个方案其实比较差，由于填充得比较暴力，所以对图片的要求比较刁钻。另外这个主题下中间的背景是被挡住的，所以对背景的要求也就变得更高了些。</p>
+<p>目前想这找一些风景图来填充就可以，以后碰上就试一下就不刻意找了。</p>
+<p><br></p>
+<h3 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h3><p>有个语法之前忘了说<code>hexo new page pagename</code>意思是新建一个名为$pagename​$的功能页</p>
+<p>然后$About\,me$页面和$Tag$页面都可以用这种方法去实现</p>
 
     </main>
     <footer class="post-footer">
@@ -197,6 +217,32 @@
   </nav>
   
   
+  
+
+<div class="comments" id="comments">
+  
+  <script defer id="dsq-count-scr" src="//qkoqhh.disqus.com/count.js"></script>
+  
+  <div id="disqus_thread" class="disqus_thread"></div>
+  <script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = "http://yoursite.com/hexo2/";
+    this.page.identifier = "hexo2/";
+  };
+  (function() {
+    var d = document, s = d.createElement("script");
+    s.src = "https://qkoqhh.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  
+  
+</div>
+
+
+
+  
 </div>
 
           </div>
@@ -218,7 +264,7 @@
   <img class="author-avatar" src="/images/avatar.jpg" alt="qkoqhh">
   
   <h1 class="author-name">qkoqhh</h1>
-  <h2 class="author-description">try a try</h2>
+  <h2 class="author-description">已陷入幻想</h2>
   <div class="site-count">
     
     <div class="archives-count">
@@ -251,21 +297,13 @@
     
     
     
-    
-    
     <hr>
-    <div class="social-link sidebar-item">
-      <div><i class="far fa-address-card"></i>社交链接<p></p></div>
-      <ul>
-        
-        <li><i class="fas fa-envelope"></i><a href="mailto:youremail@youremailhost" target="_blank">E-Mail</a></li>
-        
-        <li><i class="fab fa-github"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
-        
-        <li><i class="fab fa-weibo"></i><a href="https://weibo.com/" target="_blank">Weibo</a></li>
-        
-      </ul>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#latex支持"><span class="toc-text">latex支持</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#背景图-留坑"><span class="toc-text">背景图(留坑)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#About-me"><span class="toc-text">About me</span></a></li></ol></div>
     </div>
+    
+    
     
     
     <hr>
@@ -273,11 +311,11 @@
       <div><i class="fas fa-link"></i>友情链接</div>
       <ul>
         
-        <li><i class="fas fa-link"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><i class="fas fa-link"></i><a href="http://www.cnblogs.com/JSZX11556/" target="_blank">JSZX11556</a></li>
         
-        <li><i class="fas fa-link"></i><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+        <li><i class="fas fa-link"></i><a href="http://hzwer.com/" target="_blank">hzwer</a></li>
         
-        <li><i class="fas fa-link"></i><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
+        <li><i class="fas fa-link"></i><a href="https://blog.csdn.net/CreationAugust" target="_blank">CreationAugust</a></li>
         
       </ul>
     </div>
@@ -299,7 +337,7 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="copyright">
-          <span class="author">qkoqhh</span><span class="year"><i class="far fa-copyright"></i>2019</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
+          <span class="author">qkoqhh</span><span class="year"><i class="far fa-copyright"></i>2017 - 2019</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
         </div>
         
         <div class="busuanzi">
