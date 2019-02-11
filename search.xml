@@ -125,22 +125,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>404 Not Found</title>
+      <link href="//404.html"/>
+      <url>//404.html</url>
       
-        <content type="html"><![CDATA[<div class="alert-green"><font size="6"><strong>欢迎您访问此博客</strong></font></div><h1 id="qkoqhh"><a href="#qkoqhh" class="headerlink" title="qkoqhh"></a>qkoqhh</h1><ul><li>现役 $ACM$ 选手，特长是端茶送水。队名：<em>生鱼忧患死鱼安乐</em>。被 $2$ 位队友( <a href="http://www.cnblogs.com/wang9897/" target="_blank" rel="noopener">$wang9897$</a> 、 <a href="http://www.cnblogs.com/greenty1208/" target="_blank" rel="noopener">$Grennty\underline{}Q$</a> )带飞。由于本人演技过于高超故只拿 $2$ 银 $2$ 铜 $1$ 铁。</li><li>伪车万厨，喜欢 $STG​$ 但是停飞多时，目前只有 $7N2H2EX​$，没有打过 $E​$，不擅长打 $neta​$，但十分擅长抱 $B​$ 撞，幻想成为 $L​$ 党。偶尔和 <a href="arch0n.sumblog.cn">$Archon​$</a> 打打则。</li><li>$qkoqhh​$ 这个名字是高考账号原始密码，不必过多臆断含义 _(:3 」∠)_</li><li>$XDU​$ 摸鱼本科生，专业是网络空间安全然而自己没有任何专业技能。</li><li>语言极差，可能我的文章会写得很小学生一样，但是格式上会要求自己。</li><li>喜欢看番，最喜欢的番剧是魔法少女小圆和 $Steins\,Gate​$ 。喜欢可爱(怜)的金发女孩wwww</li></ul><p><br></p><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><p>$QQ:1374363741​$</p><p>$Email:$<a href="mailto:qkoqhh@163.com" target="_blank" rel="noopener">$qkoqhh@163.com$</a></p><p>$Telegram:​$<a href="https://t.me/qkoqhh" target="_blank" rel="noopener">$@qkoqhh​$</a></p><p>直接在这里联系我也可以，欢迎交流 _(:3 」∠)_</p><p><br></p><h1 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h1><p>以前在 <a href="https://blog.csdn.net/qkoqhh" target="_blank" rel="noopener">$CSDN​$</a> ，渐渐对 $CSDN​$ 各种不适故迁到此地。搭一下博客也是对自己的锻炼啦。。</p><p>缺少前端知识所以还有各种缺点，一些坑先了留着。欢迎在下方评论提出博客出现的种种问题 _(:3 」∠)_</p><p>搭然后这个博客主要是来写写一些题解什么的，退役后就来写一些学习笔记（当然退役前也会写的啦</p><p>写文章会尽量按照 <a href="https://loj.ac/article/6" target="_blank" rel="noopener">$LOJ$ 的排版格式</a> (当然题面暴力贴的只能凑合着看</p>]]></content>
+        <content type="html"><![CDATA[<p><style type="text/css"><br>    .article-header {<br>        padding: 0;<br>        padding-top: 26px;<br>        border-left: none;<br>        text-align: center;<br>    }<br>    .article-header:hover {<br>        border-left: none;<br>    }<br>    .article-title {<br>        font-size: 2.1em;<br>    }<br>    strong a {<br>        color: #747474;<br>    }<br>    .article-meta {<br>        display: none;<br>    }<br>    .share {<br>        display: none;<br>    }<br>    .ds-meta {<br>        display: none;<br>    }<br>    .player {<br>        margin-left: -10px;<br>    }<br>    .sign {<br>        text-align: right;<br>        font-style: italic;<br>    }</p><pre><code>  #page-visit {    display: none;}.center {    text-align: center;    height: 2.5em;    font-weight: bold;}.article-entry hr {    margin: 0;}.pic {    text-align: center;    margin: 0;}.pic br {      display: none;  }#container .article-info-post.article-info {  display: none;  }#container .article .article-title {padding: 0;}</code></pre><p></style></p><div class="alert-red"><font size="6"><strong>这里真的什么都没有啦QAQ</strong></font></div><p><img src="/image/404.jpg" alt=""></p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>404 Not Found：该页无法显示</title>
-      <link href="//404.html"/>
-      <url>//404.html</url>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<style type="text/css">    .article-header {        padding: 0;        padding-top: 26px;        border-left: none;        text-align: center;    }    .article-header:hover {        border-left: none;    }    .article-title {        font-size: 2.1em;    }    strong a {        color: #747474;    }    .article-meta {        display: none;    }    .share {        display: none;    }    .ds-meta {        display: none;    }    .player {        margin-left: -10px;    }    .sign {        text-align: right;        font-style: italic;    }      #page-visit {        display: none;    }    .center {        text-align: center;        height: 2.5em;        font-weight: bold;    }    .article-entry hr {        margin: 0;    }    .pic {        text-align: center;        margin: 0;    }    .pic br {          display: none;      }    #container .article-info-post.article-info {      display: none;      }    #container .article .article-title {    padding: 0;    }</style>]]></content>
+        <content type="html"><![CDATA[<div class="alert-green"><font size="6"><strong>欢迎您访问此博客</strong></font></div><h1 id="qkoqhh"><a href="#qkoqhh" class="headerlink" title="qkoqhh"></a>qkoqhh</h1><ul><li>现役 $ACM$ 选手，特长是端茶送水。队名：<em>生鱼忧患死鱼安乐</em>。被 $2$ 位队友( <a href="http://www.cnblogs.com/wang9897/" target="_blank" rel="noopener">$wang9897$</a> 、 <a href="http://www.cnblogs.com/greenty1208/" target="_blank" rel="noopener">$Grennty\underline{}Q$</a> )带飞。由于本人演技过于高超故只拿 $2$ 银 $2$ 铜 $1$ 铁。</li><li>伪车万厨，喜欢 $STG​$ 但是停飞多时，目前只有 $7N2H2EX​$，没有打过 $E​$，不擅长打 $neta​$，但十分擅长抱 $B​$ 撞，幻想成为 $L​$ 党。偶尔和 <a href="arch0n.sumblog.cn">$Archon​$</a> 打打则。</li><li>$qkoqhh​$ 这个名字是高考账号原始密码，不必过多臆断含义 _(:3 」∠)_</li><li>$XDU​$ 摸鱼本科生，专业是网络空间安全然而自己没有任何专业技能。</li><li>语言极差，可能我的文章会写得很小学生一样，但是格式上会要求自己。</li><li>喜欢看番，最喜欢的番剧是魔法少女小圆和 $Steins\,Gate​$ 。喜欢可爱(怜)的金发女孩wwww</li></ul><p><br></p><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><p>$QQ:1374363741​$</p><p>$Email:$<a href="mailto:qkoqhh@163.com" target="_blank" rel="noopener">$qkoqhh@163.com$</a></p><p>$Telegram:​$<a href="https://t.me/qkoqhh" target="_blank" rel="noopener">$@qkoqhh​$</a></p><p>直接在这里联系我也可以，欢迎交流 _(:3 」∠)_</p><p><br></p><h1 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h1><p>以前在 <a href="https://blog.csdn.net/qkoqhh" target="_blank" rel="noopener">$CSDN​$</a> ，渐渐对 $CSDN​$ 各种不适故迁到此地。搭一下博客也是对自己的锻炼啦。。</p><p>缺少前端知识所以还有各种缺点，一些坑先了留着。欢迎在下方评论提出博客出现的种种问题 _(:3 」∠)_</p><p>搭然后这个博客主要是来写写一些题解什么的，退役后就来写一些学习笔记（当然退役前也会写的啦</p><p>写文章会尽量按照 <a href="https://loj.ac/article/6" target="_blank" rel="noopener">$LOJ$ 的排版格式</a> (当然题面暴力贴的只能凑合着看</p>]]></content>
       
     </entry>
     
