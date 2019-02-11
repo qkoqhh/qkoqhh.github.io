@@ -193,10 +193,12 @@
 <p>但是这个方案其实比较差，由于填充得比较暴力，所以对图片的要求比较刁钻。另外这个主题下中间的背景是被挡住的，所以对背景的要求也就变得更高了些。</p>
 <p>目前想这找一些风景图来填充就可以，以后碰上就试一下就不刻意找了。</p>
 <p><br></p>
-<h3 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h3><p>有个语法之前忘了说<code>hexo new page pagename</code>意思是新建一个名为$pagename​$的功能页</p>
-<p>然后$About\,me$页面和$Tag$页面都可以用这种方法去实现</p>
+<h3 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h3><p>有个语法之前忘了说<code>hexo new page pagename</code>意思是新建一个名为$pagename$的功能页</p>
+<p>然后$About\,me$页面和$Tag$页面和$404$页面都可以用这种方法去实现</p>
+<p>其中404页面要部署在$Github\,Pages$上才能用</p>
 <p><br></p>
-<h3 id="404-留坑"><a href="#404-留坑" class="headerlink" title="404(留坑)"></a>404(留坑)</h3><p>这个貌似要把网给部署到服务器上才能用，本地没办法弄，坑先留着。。</p>
+<h3 id="代码复制"><a href="#代码复制" class="headerlink" title="代码复制"></a>代码复制</h3><p>参考链接：<a href="https://www.jianshu.com/p/3e9d614c1e77" target="_blank" rel="noopener">https://www.jianshu.com/p/3e9d614c1e77</a></p>
+<p>跟着照做就行，完全无难度</p>
 <p><br></p>
 <h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><p>窝写题解的时候格式还算是比较固定的？所以可以弄个模板上去，按照<a href="https://hexo.io/zh-cn/docs/writing#%E6%A8%A1%E7%89%88%EF%BC%88Scaffold%EF%BC%89" target="_blank" rel="noopener">官方文档</a>，在$scafflods$下建立一个$name.md$文件，然后用命令<code>hexo new name newpost</code>就可以了</p>
 <p><br></p>
@@ -323,7 +325,7 @@
     <hr>
     <div class="post-toc sidebar-item" id="toc-div">
       <div><i class="fas fa-list-ol"></i>文章目录</div>
-      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#latex支持"><span class="toc-text">latex支持</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#背景图-留坑"><span class="toc-text">背景图(留坑)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#About-me"><span class="toc-text">About me</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#404-留坑"><span class="toc-text">404(留坑)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#模板"><span class="toc-text">模板</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#突然还想要一个会动的小人-留坑"><span class="toc-text">突然还想要一个会动的小人(留坑)</span></a></li></ol></div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#latex支持"><span class="toc-text">latex支持</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#背景图-留坑"><span class="toc-text">背景图(留坑)</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#About-me"><span class="toc-text">About me</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#代码复制"><span class="toc-text">代码复制</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#模板"><span class="toc-text">模板</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#突然还想要一个会动的小人-留坑"><span class="toc-text">突然还想要一个会动的小人(留坑)</span></a></li></ol></div>
     </div>
     
     
@@ -391,5 +393,8 @@
 </footer>
 
 
+<!-- 代码块复制功能 -->
+  <script type="text/javascript" src="/js/clipboard.min.js"></script>  
+  <script type="text/javascript" src="/js/clipboard-use.js"></script>
   <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":210},"mobile":{"show":true},"log":false});</script></body>
 </html>
