@@ -129,7 +129,7 @@
       <link href="//404.html"/>
       <url>//404.html</url>
       
-        <content type="html"><![CDATA[<div class="alert-red"><font size="6"><strong>这里真的什么都没有啦QAQ</strong></font></div><p><img src="/images/404.jpg" alt=""></p>]]></content>
+        <content type="html"><![CDATA[<div class="alert-red"><font size="6"><strong>这里真的什么都没有啦QAQ</strong></font></div><center><img src="/images/404.jpg" alt=""></center>]]></content>
       
     </entry>
     
