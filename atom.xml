@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-12T10:26:04.179Z</updated>
+  <updated>2019-02-12T10:33:28.044Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/bzoj3864/"/>
     <id>http://yoursite.com/bzoj3864/</id>
     <published>2019-02-12T09:58:55.000Z</published>
-    <updated>2019-02-12T10:26:04.179Z</updated>
+    <updated>2019-02-12T10:33:28.044Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
     
   </entry>
   
