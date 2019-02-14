@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-12T10:33:28.044Z</updated>
+  <updated>2019-02-14T11:07:25.944Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cf979E(DP套DP)</title>
+    <link href="http://yoursite.com/cf979E/"/>
+    <id>http://yoursite.com/cf979E/</id>
+    <published>2019-02-14T09:28:12.000Z</published>
+    <updated>2019-02-14T11:07:25.944Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/979/problem/E&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+    
+  </entry>
   
   <entry>
     <title>bzoj3864(DP套DP)</title>
