@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-14T11:07:25.944Z</updated>
+  <updated>2019-02-15T00:50:52.472Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>妖妖梦Normal no bomb纪念</title>
+    <link href="http://yoursite.com/yym-n-nb/"/>
+    <id>http://yoursite.com/yym-n-nb/</id>
+    <published>2019-02-15T00:14:56.000Z</published>
+    <updated>2019-02-15T00:50:52.472Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;$rpy$下载地址： &lt;/strong&gt;&lt;a href=&quot;/others/th7_04.rpy&quot;&gt;$here$&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机体：&lt;/strong&gt;魔B&lt;/p&gt;
+&lt;p&gt;第一个 $neta$ 竟然是在妖妖梦打出来的。。 $yym$ 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="stg" scheme="http://yoursite.com/tags/stg/"/>
+    
+  </entry>
   
   <entry>
     <title>cf979E(DP套DP)</title>
