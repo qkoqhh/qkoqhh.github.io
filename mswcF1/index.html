@@ -106,7 +106,7 @@
     <script defer type="text/javascript" src="/js/custom.js"></script>
 
 
-    <title>妖妖梦Normal no bomb纪念 | qkoqhh - 什么都没有</title>
+    <title>Mw Winter Camp Day1 F(树背包DP+前缀和) | qkoqhh - 什么都没有</title>
   </head>
   <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -154,7 +154,7 @@
   
   <article class="article post card animate" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/yym-n-nb/">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/mswcF1/">
       <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
        <meta itemprop="name" content="qkoqhh">
        <meta itemprop="description" content="已陷入幻想">
@@ -165,11 +165,11 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">妖妖梦Normal no bomb纪念</h1>
+      <h1 class="post-title" itemprop="name headline">Mw Winter Camp Day1 F(树背包DP+前缀和)</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-02-15T08:14:56+08:00">2019-02-15 08:14:56</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-02-24T10:23:33+08:00">2019-02-24 10:23:33</time></span>
         </span>
         
         
@@ -179,26 +179,31 @@
         <span class="post-meta-divider divider">|</span>
         
         <span class="post-comment-count">
-          <i class="far fa-comments"></i><span><a href="/yym-n-nb/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="yym-n-nb/" itemprop="commentCount"></span></a></span>
+          <i class="far fa-comments"></i><span><a href="/mswcF1/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="mswcF1/" itemprop="commentCount"></span></a></span>
         </span>
         
         
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p><strong>$rpy$下载地址： </strong><a href="/others/th7_04.rpy">$here$</a></p>
-<p><strong>机体：</strong>魔B</p>
-<p>第一个 $neta$ 竟然是在妖妖梦打出来的。。 $yym$  虽然是几作中比较难的，但是难点是资源比较少(魔机更是少得可怜嘤嘤嘤)，打 $neta$ 的时候和混关的难度差感觉不会太大？</p>
-<p>在 $H$ 混关的时候打得比较多吧，所以 $4$ 面 $BOSS$ 之前基本满残，$4$ 面 $BOSS$ 确实有不少糟点， 一非、二符， 三符也不造为什么收率贼低；$5$ 面的槽点反而少点，道中压力其实比 $H$ 要小很多； $6$ 面就很尴尬，混关直接炸过，这个一符对直弹来说就是噩梦啊qaq，基本就是要拖全避的节奏，能只掉一残已经满足了，二非二符向来也是很槽，也只能用底力乱扭(二符的绕圈走位实在学不来qaq)，还好也只掉一残，三非其实 $N$ 还是比较好过，直接在 $UUZ$ 下面穿就可以(然而窝忘了)，一残；后面的压力其实反而比较小。</p>
-<p>最后附图：</p>
-<p><img src="/images/yym-n-nb1.png" alt=""></p>
+      <h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>给定 $n$ 个点的树 $(n\le10000)$ ，求点集个数，使得点集里的点两两之间的距离超过 $c$  $(c\le500)$</p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>题意比较吓人，所以也想复杂了</p>
+<p>直接用树背包统计就可以了</p>
+<p>设 $d[i][j]$ 为 $i$ 为根的子树中符合题意的点集个数的方案数，其中点集与 $i$ 最近的距离为 $j$</p>
+<p>那么取空集的时候令 $j$ 等于 $c$ ，然后考虑 $i$ 和 $i$ 的子树的 $j$ 的最小值转移就可以了</p>
+<p>复杂度为 $O(nc^2)$ ，借用树背包的优化方法可以将复杂度降很多(但窝不会算)，莽一发就过了。。</p>
+<p>正解是对2个背包求前缀和，求出 $\geq j$ 的方案数再容斥一下（感觉自己好蠢</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="hljs highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> inc(i,l,r) for(int i=l;i&lt;=r;i++)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> dec(i,l,r) for(int i=l;i&gt;=r;i--)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> link(x) for(edge*j=h[x];j;j=j-&gt;next)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> ll long long</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> sqr(x) ((x)*(x))</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> succ(x) (1&lt;&lt;x)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> lowbit(x) (x&amp;(-x))</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> mem(a) memset(a,0,sizeof(a))</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NM 10005</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> nm 505</span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> inf=<span class="hljs-number">1e6</span>;<br><span class="hljs-function">ll <span class="hljs-title">read</span><span class="hljs-params">()</span></span>&#123;<br>    ll x=<span class="hljs-number">0</span>,f=<span class="hljs-number">1</span>;<span class="hljs-keyword">char</span> ch=getchar();<br>    <span class="hljs-keyword">while</span>(!<span class="hljs-built_in">isdigit</span>(ch))&#123;<span class="hljs-keyword">if</span>(ch==<span class="hljs-string">'-'</span>)f=<span class="hljs-number">-1</span>;ch=getchar();&#125;<br>    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">isdigit</span>(ch))x=x*<span class="hljs-number">10</span>+ch-<span class="hljs-string">'0'</span>,ch=getchar();<br>    <span class="hljs-keyword">return</span> x*f;<br>&#125;<br><br><br><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">edge</span>&#123;</span><span class="hljs-keyword">int</span> t;edge*next;&#125;e[<span class="hljs-number">2</span>*NM],*h[NM],*o=e;<br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y)</span></span>&#123;o-&gt;t=y;o-&gt;next=h[x];h[x]=o++;&#125;<br><span class="hljs-keyword">int</span> n,c,_x,_y,dep[NM],ca;<br>ll d[NM][nm],ans,g[NM][nm];<br><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> f)</span></span>&#123;<br>    dep[x]=<span class="hljs-number">0</span>;<br>    inc(i,<span class="hljs-number">0</span>,c<span class="hljs-number">-1</span>)d[x][i]=<span class="hljs-number">0</span>;<br>    d[x][c]=<span class="hljs-number">1</span>;<br>    link(x)<span class="hljs-keyword">if</span>(j-&gt;t!=f)&#123;<br>	dfs(j-&gt;t,x);<br>	inc(k,<span class="hljs-number">1</span>,min(c<span class="hljs-number">-1</span>,dep[x]))&#123;<br>	    inc(v,max(<span class="hljs-number">0</span>,c<span class="hljs-number">-1</span>-k),min(c<span class="hljs-number">-1</span>,dep[j-&gt;t]))<br>		(g[x][min(k,v+<span class="hljs-number">1</span>)]+=d[x][k]*d[j-&gt;t][v]%inf)%=inf;<br>	    (g[x][min(k,c)]+=d[x][k]*d[j-&gt;t][c]%inf)%=inf;<br>	&#125;<br>	inc(v,<span class="hljs-number">0</span>,min(c<span class="hljs-number">-1</span>,dep[j-&gt;t]))(g[x][min(c,v+<span class="hljs-number">1</span>)]+=d[x][c]*d[j-&gt;t][v]%inf)%=inf;<br>	(g[x][c]+=d[x][c]*d[j-&gt;t][c]%inf)%=inf;<br><br>	inc(k,<span class="hljs-number">0</span>,c)d[x][k]=g[x][k],g[x][k]=<span class="hljs-number">0</span>;<br>	dep[x]=max(dep[x],dep[j-&gt;t]+<span class="hljs-number">1</span>);<br>    &#125;<br>    d[x][<span class="hljs-number">0</span>]=<span class="hljs-number">1</span>;<br>    link(x)<span class="hljs-keyword">if</span>(j-&gt;t!=f)&#123;<br>	d[x][<span class="hljs-number">0</span>]*=(d[j-&gt;t][c]+d[j-&gt;t][c<span class="hljs-number">-1</span>]);d[x][<span class="hljs-number">0</span>]%=inf;<br>    &#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-keyword">while</span>(~<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d%d"</span>,&amp;n,&amp;c)&amp;&amp;n&amp;&amp;c)&#123;<br>	o=e;ans=<span class="hljs-number">0</span>;<br>	inc(i,<span class="hljs-number">1</span>,n)h[i]=<span class="hljs-number">0</span>;<br>	inc(i,<span class="hljs-number">1</span>,n<span class="hljs-number">-1</span>)&#123;_x=read();_y=read();add(_x,_y);add(_y,_x);&#125;<br>	dfs(<span class="hljs-number">1</span>,<span class="hljs-number">0</span>);<br>	inc(i,<span class="hljs-number">0</span>,c)ans+=d[<span class="hljs-number">1</span>][i],ans%=inf;<br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"Case #%d: %lld\n"</span>,++ca,ans);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
     </main>
     <footer class="post-footer">
       
       <div class="post-tags">
         
-        <a class="post-tag button" href="/tags/stg/" rel="tag"><i class="fas fa-tags"></i>stg</a>
+        <a class="post-tag button" href="/tags/DP/" rel="tag"><i class="fas fa-tags"></i>DP</a>
         
       </div>
       
@@ -209,12 +214,12 @@
   <nav class="page-nav">
     <div class="page-nav-next page-nav-item">
       
-      <a href="/cf979E/" rel="next" title="cf979E(DP套DP)"><i class="fas fa-angle-left"></i><span class="nav-title">cf979E(DP套DP)</span></a>
+      <a href="/mswcD1/" rel="next" title="Mw Winter Camp Day1 D(DP+后缀数组)"><i class="fas fa-angle-left"></i><span class="nav-title">Mw Winter Camp Day1 D(DP+后缀数组)</span></a>
       
     </div>
     <div class="page-nav-prev page-nav-item">
       
-      <a href="/mswcD1/" rel="prev" title="Mw Winter Camp Day1 D(DP+后缀数组)"><span class="nav-title">Mw Winter Camp Day1 D(DP+后缀数组)</span><i class="fas fa-angle-right"></i></a>
+      <a href="/mswcK1/" rel="prev" title="Mw Winter Camp Day1 K(分数规划/维护凸包+二分)"><span class="nav-title">Mw Winter Camp Day1 K(分数规划/维护凸包+二分)</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
@@ -229,8 +234,8 @@
   <div id="disqus_thread" class="disqus_thread"></div>
   <script type="text/javascript">
   var disqus_config = function () {
-    this.page.url = "http://yoursite.com/yym-n-nb/";
-    this.page.identifier = "yym-n-nb/";
+    this.page.url = "http://yoursite.com/mswcF1/";
+    this.page.identifier = "mswcF1/";
   };
   (function() {
     var d = document, s = d.createElement("script");
@@ -299,6 +304,12 @@
     
     
     
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#题意"><span class="toc-text">题意</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#题解"><span class="toc-text">题解</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#代码"><span class="toc-text">代码</span></a></li></ol></div>
+    </div>
     
     
     

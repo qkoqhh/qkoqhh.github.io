@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-15T00:50:52.472Z</updated>
+  <updated>2019-02-24T03:29:55.845Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mw Winter Camp Day1 K(分数规划/维护凸包+二分)</title>
+    <link href="http://yoursite.com/mswcK1/"/>
+    <id>http://yoursite.com/mswcK1/</id>
+    <published>2019-02-24T02:43:45.000Z</published>
+    <updated>2019-02-24T03:29:55.845Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题意&quot;&gt;&lt;a href=&quot;#题意&quot; class=&quot;headerlink&quot; title=&quot;题意&quot;&gt;&lt;/a&gt;题意&lt;/h3&gt;&lt;p&gt;给定 $n\times n$ $(n\le300)$ 的矩阵，求子矩阵，使得 $\frac{子矩阵和}{周长}$ 最大&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分数规划" scheme="http://yoursite.com/tags/%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mw Winter Camp Day1 F(树背包DP+前缀和)</title>
+    <link href="http://yoursite.com/mswcF1/"/>
+    <id>http://yoursite.com/mswcF1/</id>
+    <published>2019-02-24T02:23:33.000Z</published>
+    <updated>2019-02-24T03:29:49.537Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题意&quot;&gt;&lt;a href=&quot;#题意&quot; class=&quot;headerlink&quot; title=&quot;题意&quot;&gt;&lt;/a&gt;题意&lt;/h3&gt;&lt;p&gt;给定 $n$ 个点的树 $(n\le10000)$ ，求点集个数，使得点集里的点两两之间的距离超过 $c$ 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mw Winter Camp Day1 D(DP+后缀数组)</title>
+    <link href="http://yoursite.com/mswcD1/"/>
+    <id>http://yoursite.com/mswcD1/</id>
+    <published>2019-02-24T01:59:48.000Z</published>
+    <updated>2019-02-24T03:29:38.577Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题意&quot;&gt;&lt;a href=&quot;#题意&quot; class=&quot;headerlink&quot; title=&quot;题意&quot;&gt;&lt;/a&gt;题意&lt;/h3&gt;&lt;p&gt;给定字符串 $S$ $(|S|\le3000)$ ，求将 $S$ 分裂成几个递增的子串的方案数&lt;/p&gt;
+&lt;h3 id=&quot;题解&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+    
+      <category term="后缀数组" scheme="http://yoursite.com/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>妖妖梦Normal no bomb纪念</title>
