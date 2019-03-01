@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-24T04:15:55.507Z</updated>
+  <updated>2019-03-01T09:48:01.195Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mw Winter Camp Day4 DivB E(bfs+卡常)</title>
+    <link href="http://yoursite.com/mswcE4b/"/>
+    <id>http://yoursite.com/mswcE4b/</id>
+    <published>2019-03-01T09:24:38.000Z</published>
+    <updated>2019-03-01T09:48:01.195Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题意&quot;&gt;&lt;a href=&quot;#题意&quot; class=&quot;headerlink&quot; title=&quot;题意&quot;&gt;&lt;/a&gt;题意&lt;/h3&gt;&lt;p&gt;给定 $n$ 个点 $m$ 条边的图 $(n\le900,m\le150000)$ ，问去掉每条边之后的最短路，边权均为
+        
+      
+    
+    </summary>
+    
+    
+      <category term="bfs" scheme="http://yoursite.com/tags/bfs/"/>
+    
+      <category term="最短路" scheme="http://yoursite.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Mw Winter Camp Day1 K(分数规划/维护凸包+二分)</title>
@@ -46,7 +72,7 @@
     <link href="http://yoursite.com/mswcF1/"/>
     <id>http://yoursite.com/mswcF1/</id>
     <published>2019-02-24T02:23:33.000Z</published>
-    <updated>2019-02-24T03:29:49.537Z</updated>
+    <updated>2019-03-01T09:49:22.372Z</updated>
     
     <summary type="html">
     
@@ -70,7 +96,7 @@
     <link href="http://yoursite.com/mswcD1/"/>
     <id>http://yoursite.com/mswcD1/</id>
     <published>2019-02-24T01:59:48.000Z</published>
-    <updated>2019-02-24T04:16:21.379Z</updated>
+    <updated>2019-03-01T09:47:44.182Z</updated>
     
     <summary type="html">
     
@@ -123,7 +149,7 @@
     <link href="http://yoursite.com/cf979E/"/>
     <id>http://yoursite.com/cf979E/</id>
     <published>2019-02-14T09:28:12.000Z</published>
-    <updated>2019-02-14T11:07:25.944Z</updated>
+    <updated>2019-03-01T09:48:46.703Z</updated>
     
     <summary type="html">
     
@@ -147,7 +173,7 @@
     <link href="http://yoursite.com/bzoj3864/"/>
     <id>http://yoursite.com/bzoj3864/</id>
     <published>2019-02-12T09:58:55.000Z</published>
-    <updated>2019-02-12T10:33:28.044Z</updated>
+    <updated>2019-03-01T09:48:22.899Z</updated>
     
     <summary type="html">
     
@@ -171,7 +197,7 @@
     <link href="http://yoursite.com/cf1111D/"/>
     <id>http://yoursite.com/cf1111D/</id>
     <published>2019-02-10T03:37:04.000Z</published>
-    <updated>2019-02-12T10:27:22.135Z</updated>
+    <updated>2019-03-01T09:49:03.516Z</updated>
     
     <summary type="html">
     
