@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-01T09:48:01.195Z</updated>
+  <updated>2019-03-02T16:14:42.301Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>绀珠传Normal初通</title>
+    <link href="http://yoursite.com/gzz-n/"/>
+    <id>http://yoursite.com/gzz-n/</id>
+    <published>2019-03-02T15:37:43.000Z</published>
+    <updated>2019-03-02T16:14:42.301Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;$rpy$ 下载地址：&lt;/strong&gt; &lt;a href=&quot;/others/th15_02.rpy&quot;&gt;$here$&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机体：&lt;/strong&gt;兔机&lt;/p&gt;
+&lt;p&gt;以前是无欠魔机通的。。一是没有抱 $B​$
+        
+      
+    
+    </summary>
+    
+    
+      <category term="stg" scheme="http://yoursite.com/tags/stg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cf1117D(dp+矩阵快速幂)</title>
+    <link href="http://yoursite.com/cf1117D/"/>
+    <id>http://yoursite.com/cf1117D/</id>
+    <published>2019-03-01T12:08:35.000Z</published>
+    <updated>2019-03-01T12:13:52.003Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题意&quot;&gt;&lt;a href=&quot;#题意&quot; class=&quot;headerlink&quot; title=&quot;题意&quot;&gt;&lt;/a&gt;题意&lt;/h3&gt;&lt;p&gt;给定魔法珠子和普通珠子，一个魔法珠子能分裂成 $m$
+        
+      
+    
+    </summary>
+    
+    
+      <category term="dp" scheme="http://yoursite.com/tags/dp/"/>
+    
+  </entry>
   
   <entry>
     <title>Mw Winter Camp Day4 DivB E(bfs+卡常)</title>
