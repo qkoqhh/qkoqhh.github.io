@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-07T15:46:26.228Z</updated>
+  <updated>2019-03-09T01:45:19.595Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hdu6184(三元环)</title>
+    <link href="http://yoursite.com/hdu6184/"/>
+    <id>http://yoursite.com/hdu6184/</id>
+    <published>2019-03-09T06:49:24.000Z</published>
+    <updated>2019-03-09T01:45:19.595Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://acm.hdu.edu.cn/showproblem.php?pid=6184&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="图论" scheme="http://yoursite.com/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>xdoj1187(三元环计数)</title>
+    <link href="http://yoursite.com/xdoj1187/"/>
+    <id>http://yoursite.com/xdoj1187/</id>
+    <published>2019-03-09T01:41:27.000Z</published>
+    <updated>2019-03-09T01:43:39.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://acm.xidian.edu.cn/problem.php?id=1187&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="图论" scheme="http://yoursite.com/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>bzoj4609(最短路+贪心+wqs二分+决策单调性)</title>
     <link href="http://yoursite.com/bzoj4609/"/>
     <id>http://yoursite.com/bzoj4609/</id>
     <published>2019-03-07T15:21:44.000Z</published>
-    <updated>2019-03-07T15:46:26.228Z</updated>
+    <updated>2019-03-09T01:43:58.213Z</updated>
     
     <summary type="html">
     
