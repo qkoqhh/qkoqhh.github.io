@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-09T14:01:40.745Z</updated>
+  <updated>2019-03-10T12:42:11.982Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bzoj3262(三维偏序)</title>
+    <link href="http://yoursite.com/bzoj3262/"/>
+    <id>http://yoursite.com/bzoj3262/</id>
+    <published>2019-03-10T12:17:17.000Z</published>
+    <updated>2019-03-10T12:42:11.982Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h3&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分治" scheme="http://yoursite.com/tags/%E5%88%86%E6%B2%BB/"/>
+    
+      <category term="BIT" scheme="http://yoursite.com/tags/BIT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cf1132E(背包dp)</title>
+    <link href="http://yoursite.com/cf1132E/"/>
+    <id>http://yoursite.com/cf1132E/</id>
+    <published>2019-03-10T07:22:32.000Z</published>
+    <updated>2019-03-10T12:42:53.795Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;题目链接&quot;&gt;&lt;a href=&quot;#题目链接&quot; class=&quot;headerlink&quot; title=&quot;题目链接&quot;&gt;&lt;/a&gt;题目链接&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1132/problem/E&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+    
+  </entry>
   
   <entry>
     <title>luogu3374(cdq分治)</title>
@@ -143,7 +193,7 @@
     <link href="http://yoursite.com/gzz-n/"/>
     <id>http://yoursite.com/gzz-n/</id>
     <published>2019-03-02T15:37:43.000Z</published>
-    <updated>2019-03-02T16:14:42.301Z</updated>
+    <updated>2019-03-10T12:41:59.758Z</updated>
     
     <summary type="html">
     
@@ -160,7 +210,7 @@
     </summary>
     
     
-      <category term="stg" scheme="http://yoursite.com/tags/stg/"/>
+      <category term="STG" scheme="http://yoursite.com/tags/STG/"/>
     
   </entry>
   
@@ -193,7 +243,7 @@
     <link href="http://yoursite.com/mswcE4b/"/>
     <id>http://yoursite.com/mswcE4b/</id>
     <published>2019-03-01T09:24:38.000Z</published>
-    <updated>2019-03-01T09:48:01.195Z</updated>
+    <updated>2019-03-10T12:44:56.736Z</updated>
     
     <summary type="html">
     
@@ -208,9 +258,9 @@
     </summary>
     
     
-      <category term="bfs" scheme="http://yoursite.com/tags/bfs/"/>
-    
       <category term="最短路" scheme="http://yoursite.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    
+      <category term="BFS" scheme="http://yoursite.com/tags/BFS/"/>
     
   </entry>
   
@@ -295,7 +345,7 @@
     <link href="http://yoursite.com/yym-n-nb/"/>
     <id>http://yoursite.com/yym-n-nb/</id>
     <published>2019-02-15T00:14:56.000Z</published>
-    <updated>2019-02-15T00:50:52.472Z</updated>
+    <updated>2019-03-10T12:42:35.022Z</updated>
     
     <summary type="html">
     
@@ -312,7 +362,7 @@
     </summary>
     
     
-      <category term="stg" scheme="http://yoursite.com/tags/stg/"/>
+      <category term="STG" scheme="http://yoursite.com/tags/STG/"/>
     
   </entry>
   
@@ -443,7 +493,7 @@
     <link href="http://yoursite.com/shootingtest/"/>
     <id>http://yoursite.com/shootingtest/</id>
     <published>2018-12-24T09:07:01.000Z</published>
-    <updated>2019-03-01T09:45:47.801Z</updated>
+    <updated>2019-03-10T12:43:05.055Z</updated>
     
     <summary type="html">
     
@@ -462,57 +512,7 @@
     </summary>
     
     
-      <category term="stg" scheme="http://yoursite.com/tags/stg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test and note of markdown</title>
-    <link href="http://yoursite.com/test/"/>
-    <id>http://yoursite.com/test/</id>
-    <published>2017-10-28T11:25:08.000Z</published>
-    <updated>2019-02-05T04:15:19.694Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Test&quot;&gt;&lt;a href=&quot;#Test&quot; class=&quot;headerlink&quot; title=&quot;Test&quot;&gt;&lt;/a&gt;Test&lt;/h1&gt;&lt;h3 id=&quot;Test-1&quot;&gt;&lt;a href=&quot;#Test-1&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
-    
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/hello-world/"/>
-    <id>http://yoursite.com/hello-world/</id>
-    <published>2017-10-27T10:25:41.000Z</published>
-    <updated>2019-02-01T06:52:55.741Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+      <category term="STG" scheme="http://yoursite.com/tags/STG/"/>
     
   </entry>
   
