@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-13T07:54:34.984Z</updated>
+  <updated>2020-01-07T16:20:35.769Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>gym102428(DP)</title>
+    <title>gym102428F(DP)</title>
     <link href="http://yoursite.com/gym102428F/"/>
     <id>http://yoursite.com/gym102428F/</id>
     <published>2019-12-13T07:32:15.000Z</published>
-    <updated>2019-12-13T07:54:34.984Z</updated>
+    <updated>2020-01-07T16:20:35.769Z</updated>
     
     <summary type="html">
     
@@ -480,9 +480,9 @@
     </summary>
     
     
-      <category term="组合数学" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-    
       <category term="FFT" scheme="http://yoursite.com/tags/FFT/"/>
+    
+      <category term="组合数学" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
