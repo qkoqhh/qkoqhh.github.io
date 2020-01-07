@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    
+    <meta name="keywords" content="Program, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="qkoqhh" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    
+    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ["$","$"], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+      }
+    });
+    </script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += " has-jax";
+      }
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+
+
+    <title>bzoj5210(动态DP) | qkoqhh - 什么都没有</title>
+  </head>
+  <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">qkoqhh</a></h1>
+        <h2 class="subtitle">什么都没有</h2>
+      </div>
+      
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo">
+      </div>
+      
+    </div>
+    <nav id="nav" class="nav">
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
+      <ul id="menu" role="menubar" aria-hidden="false">
+        
+        <li role="menuitem"><a href="/">首页</a></li>
+        
+        <li role="menuitem"><a href="/archives/">归档</a></li>
+        
+        <li role="menuitem"><a href="/tags/">标签</a></li>
+        
+        <li role="menuitem"><a href="/guo/">无限填坑进行曲</a></li>
+        
+        <li role="menuitem"><a href="/about/">关于</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="page">
+  
+  <article class="article post card animate" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/bzoj5210/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="qkoqhh">
+       <meta itemprop="description" content="已陷入幻想">
+       <meta itemprop="image" content="/images/avatar.jpg">
+      </span>
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="qkoqhh">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">bzoj5210(动态DP)</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-03-21T15:59:43+08:00">2019-03-21 15:59:43</time></span>
+        </span>
+        
+        
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i><span><a href="/bzoj5210/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="bzoj5210/" itemprop="commentCount"></span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <h3 id="题目链接"><a href="#题目链接" class="headerlink" title="题目链接"></a>题目链接</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=5210" target="_blank" rel="noopener">https://www.lydsy.com/JudgeOnline/problem.php?id=5210</a></p>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>依旧先树链剖分</p>
+<p>设 $dp[i][0]$ 为取 $i$ 的最大联通块，$dp[i][1]$ 为 $i$ 为子树的最大联通块</p>
+<p>$dp[i][0]=a[i]+\sum max{0,dp[son][0] }$</p>
+<p>$dp[i][1]=max_j {dp[j][0] }$</p>
+<p>设 $g$ 为不考虑重链的情况，那么</p>
+<script type="math/tex; mode=display">
+\left[ \begin{matrix} 
+g[i][0]&-\infty&g[i][0]\\
+g[i][0]&0&g[i][1]\\
+-\infty&-\infty&0
+\end{matrix}\right]
+\times
+\left[ \begin{matrix} 
+d[son][0]\\
+d[son][1]\\
+0
+\end{matrix}\right]
+=
+\left[ \begin{matrix} 
+d[i][0]\\
+d[i][1]\\
+0
+\end{matrix}\right]</script><p>然后直接查询直接求矩阵乘积</p>
+<p>那么修改需要考虑自身作为轻儿子的影响，而 $g[i][1]$ 是直接取 $max$ 的，所以可以直接在每个节点开 $set$ 维护轻儿子，然后复杂度依旧是 $O(nlogn)​$，然后发现跑得贼慢。。原因是矩阵乘法太费时了。。可以换成普通的转移做。。</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="hljs highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br></pre></td><td class="code"><pre><code class="hljs c++"><br><span class="hljs-comment">/**<br> *　　　　　　  　　┏┓　　 　┏┓<br> * 　　　　　  　　┏┛┗━━━━━━━┛┗━━━┓<br> * 　　　　　  　　┃　　　　　　　┃ 　<br> * 　　　　　  　　┃　　　━　　 　┃<br> * 　　　　　  　　┃　＞　　　＜　┃<br> * 　　　　　  　　┃　　　　　　　┃<br> * 　　　　　  　　┃...　⌒　... 　┃<br> * 　　　　　　  　┃              ┃<br> * 　　　　　　  　┗━┓          ┏━┛<br> * 　　　　　　　　　┃          ┃　Code is far away from bug with the animal protecting　　　　　　　　　　<br> * 　　　　　　　　　┃          ┃   神兽保佑,代码无bug<br> * 　　　　　　　　　┃          ┃　　　　　　　　　　　<br> * 　　　　　　　　　┃          ┃  　　　　　　<br> * 　　　　　　　　　┃          ┃<br> * 　　　　　　　　　┃          ┃　　　　　　　　　　　<br> * 　　　　　　　　　┃          ┗━━━┓<br> * 　　　　　　　　　┃              ┣┓<br> * 　　　　　　　　　┃              ┏┛<br> * 　　　　　　　　　┗┓┓┏━━━━━━━━┳┓┏┛<br> * 　　　　　　　　　　┃┫┫       ┃┫┫<br> * 　　　　　　　　　　┗┻┛       ┗┻┛<br> */</span> <br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;queue&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;map&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stack&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cmath&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;set&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bitset&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;assert.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> inc(i,l,r) for(int i=l;i&lt;=r;i++)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> dec(i,l,r) for(int i=l;i&gt;=r;i--)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> link(x) for(edge *j=h[x];j;j=j-&gt;next)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> mem(a) memset(a,0,sizeof(a))</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> ll long long</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> eps 1e-8</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> succ(x) (1&lt;&lt;x)</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> lowbit(x) (x&amp;(-x))</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> sqr(x) ((x)*(x))</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> mid (x+y)/2</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NM 200005</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> nm 400005</span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> pi 3.1415926535897931</span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><span class="hljs-keyword">const</span> ll inf=<span class="hljs-number">1e18</span>;<br><span class="hljs-function">ll <span class="hljs-title">read</span><span class="hljs-params">()</span></span>&#123;<br>    ll x=<span class="hljs-number">0</span>,f=<span class="hljs-number">1</span>;<span class="hljs-keyword">char</span> ch=getchar();<br>    <span class="hljs-keyword">while</span>(!<span class="hljs-built_in">isdigit</span>(ch))&#123;<span class="hljs-keyword">if</span>(ch==<span class="hljs-string">'-'</span>)f=<span class="hljs-number">-1</span>;ch=getchar();&#125;<br>    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">isdigit</span>(ch))x=x*<span class="hljs-number">10</span>+ch-<span class="hljs-string">'0'</span>,ch=getchar();<br>    <span class="hljs-keyword">return</span> f*x;<br>&#125;<br><br><br><br><br><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">edge</span>&#123;</span><span class="hljs-keyword">int</span> t;edge*next;&#125;e[nm],*h[NM],*o=e;<br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y)</span></span>&#123;o-&gt;t=y;o-&gt;next=h[x];h[x]=o++;&#125;<br><span class="hljs-keyword">int</span> n,m,_x,_y;<br>ll g[NM][<span class="hljs-number">2</span>],d[NM][<span class="hljs-number">2</span>],a[NM];<br><span class="hljs-keyword">int</span> son[NM],c[NM],id[NM],tot,top[NM],TOP,f[NM],end[NM],size[NM];<br><span class="hljs-keyword">char</span> _s[<span class="hljs-number">5</span>];<br><span class="hljs-built_in">multiset</span>&lt;ll&gt;p[NM];<br><span class="hljs-built_in">multiset</span>&lt;ll&gt;::iterator it;<br><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs1</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span>&#123;<br>    d[x][<span class="hljs-number">0</span>]=a[x];<br>    link(x)<span class="hljs-keyword">if</span>(j-&gt;t!=f[x])&#123;<br>	f[j-&gt;t]=x;<br>	dfs1(j-&gt;t);<br>	<span class="hljs-keyword">if</span>(size[j-&gt;t]&gt;size[son[x]])son[x]=j-&gt;t;<br>	size[x]+=size[j-&gt;t];<br>	d[x][<span class="hljs-number">0</span>]+=max(d[j-&gt;t][<span class="hljs-number">0</span>],<span class="hljs-number">0l</span>l);<br>	d[x][<span class="hljs-number">1</span>]=max(d[x][<span class="hljs-number">1</span>],d[j-&gt;t][<span class="hljs-number">1</span>]);<br>    &#125;<br>    size[x]++;d[x][<span class="hljs-number">1</span>]=max(d[x][<span class="hljs-number">1</span>],d[x][<span class="hljs-number">0</span>]);<br>&#125;<br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">dfs2</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span>&#123;<br>    top[x]=TOP;id[x]=++tot;c[tot]=x;g[x][<span class="hljs-number">0</span>]=a[x];end[x]=x;<br>    <span class="hljs-keyword">if</span>(son[x])dfs2(son[x]),end[x]=end[son[x]];<br>    link(x)<span class="hljs-keyword">if</span>(!top[j-&gt;t])&#123;<br>	dfs2(TOP=j-&gt;t);<br>	g[x][<span class="hljs-number">0</span>]+=max(d[j-&gt;t][<span class="hljs-number">0</span>],<span class="hljs-number">0l</span>l);<br>	p[x].insert(d[j-&gt;t][<span class="hljs-number">1</span>]);<br>    &#125;<br>    <span class="hljs-keyword">if</span>(p[x].empty())&#123;g[x][<span class="hljs-number">1</span>]=g[x][<span class="hljs-number">0</span>];<span class="hljs-keyword">return</span>;&#125;<br>    it=p[x].end();it--;<br>    g[x][<span class="hljs-number">1</span>]=max(*it,g[x][<span class="hljs-number">0</span>]);<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">mat</span>&#123;</span><span class="hljs-keyword">int</span> n,m;ll a[<span class="hljs-number">3</span>][<span class="hljs-number">3</span>];&#125;one;<br>mat <span class="hljs-keyword">operator</span>*(<span class="hljs-keyword">const</span> mat&amp;x,<span class="hljs-keyword">const</span> mat&amp;y)&#123;<br>    mat s;s.n=x.n;s.m=y.m;inc(i,<span class="hljs-number">0</span>,<span class="hljs-number">2</span>)inc(j,<span class="hljs-number">0</span>,<span class="hljs-number">2</span>)s.a[i][j]=-inf;<br>    inc(i,<span class="hljs-number">0</span>,s.n)inc(k,<span class="hljs-number">0</span>,x.m)<span class="hljs-keyword">if</span>(x.a[i][k]&gt;-inf)inc(j,<span class="hljs-number">0</span>,s.m)<span class="hljs-keyword">if</span>(y.a[k][j]&gt;-inf)s.a[i][j]=max(s.a[i][j],x.a[i][k]+y.a[k][j]);<br>    <span class="hljs-keyword">return</span> s;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span>&#123;</span><br>    node*l,*r;<br>    <span class="hljs-keyword">int</span> x,y;<br>    mat s;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">upd</span><span class="hljs-params">()</span></span>&#123;s=l-&gt;s*r-&gt;s;&#125;<br>    node(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y,node*l=<span class="hljs-number">0</span>,node*r=<span class="hljs-number">0</span>):x(x),y(y),l(l),r(r)&#123;<br>	<span class="hljs-keyword">if</span>(x==y)&#123;<br>	    mem(s.a);s.n=s.m=<span class="hljs-number">2</span>;<br>	    s.a[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]=s.a[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>]=s.a[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>]=-inf;<br>	    s.a[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]=s.a[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>]=s.a[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]=g[c[x]][<span class="hljs-number">0</span>];s.a[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>]=g[c[x]][<span class="hljs-number">1</span>];<br>	&#125;<span class="hljs-keyword">else</span> upd();<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">mod</span><span class="hljs-params">()</span></span>&#123;<br>	<span class="hljs-keyword">if</span>(x==y)&#123;<br>	    s.a[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]=s.a[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>]=s.a[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]=g[c[x]][<span class="hljs-number">0</span>];s.a[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>]=g[c[x]][<span class="hljs-number">1</span>];<br>	    <span class="hljs-keyword">return</span>;<br>	&#125;<br>	<span class="hljs-keyword">if</span>(_x&lt;=mid)l-&gt;mod();<span class="hljs-keyword">else</span> r-&gt;mod();upd();<br>    &#125;<br>    <span class="hljs-function">mat <span class="hljs-title">sum</span><span class="hljs-params">()</span></span>&#123;<br>	<span class="hljs-keyword">if</span>(_x&lt;=x&amp;&amp;y&lt;=_y)<span class="hljs-keyword">return</span> s;<br>	<span class="hljs-keyword">if</span>(_x&gt;mid)<span class="hljs-keyword">return</span> r-&gt;sum();<br>	<span class="hljs-keyword">if</span>(_y&lt;=mid)<span class="hljs-keyword">return</span> l-&gt;sum();<br>	<span class="hljs-keyword">return</span> l-&gt;sum()*r-&gt;sum();<br>    &#125;<br>&#125;*root;<br><span class="hljs-function">node*<span class="hljs-title">build</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y)</span></span>&#123;<span class="hljs-keyword">return</span> x==y?<span class="hljs-keyword">new</span> node(x,y):<span class="hljs-keyword">new</span> node(x,y,build(x,mid),build(mid+<span class="hljs-number">1</span>,y));&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">ch</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span>&#123;<br>    g[x][<span class="hljs-number">0</span>]+=_y-a[x];a[x]=_y;<br>    <span class="hljs-keyword">if</span>(!p[x].empty())&#123;<br>	it=p[x].end();it--;<br>	g[x][<span class="hljs-number">1</span>]=max(*it,g[x][<span class="hljs-number">0</span>]);<br>    &#125;<span class="hljs-keyword">else</span> g[x][<span class="hljs-number">1</span>]=g[x][<span class="hljs-number">0</span>];<br>    _x=id[x];root-&gt;mod();<br>    <span class="hljs-keyword">while</span>(top[x]&gt;<span class="hljs-number">1</span>)&#123;<br>	x=top[x];<br>	_x=id[x];_y=id[end[x]];mat t=root-&gt;sum()*one;<br>	g[f[x]][<span class="hljs-number">0</span>]-=max(d[x][<span class="hljs-number">0</span>],<span class="hljs-number">0l</span>l)-max(t.a[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>],<span class="hljs-number">0l</span>l);<br>	p[f[x]].erase(p[f[x]].lower_bound(d[x][<span class="hljs-number">1</span>]));p[f[x]].insert(d[x][<span class="hljs-number">1</span>]=t.a[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]);<br>	it=p[f[x]].end();it--;<br>	g[f[x]][<span class="hljs-number">1</span>]=max(*it,g[f[x]][<span class="hljs-number">0</span>]);<br>	d[x][<span class="hljs-number">0</span>]=max(t.a[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>],<span class="hljs-number">0l</span>l);<br>	x=f[x];_x=id[x];root-&gt;mod();<br>    &#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    freopen(<span class="hljs-string">"data.in"</span>,<span class="hljs-string">"r"</span>,<span class="hljs-built_in">stdin</span>);<br>    n=read();m=read();<br>    inc(i,<span class="hljs-number">1</span>,n)a[i]=read();<br>    inc(i,<span class="hljs-number">2</span>,n)&#123;_x=read();_y=read();add(_x,_y);add(_y,_x);&#125;<br>    dfs1(f[<span class="hljs-number">1</span>]=<span class="hljs-number">1</span>);dfs2(TOP=<span class="hljs-number">1</span>);<br>    <span class="hljs-comment">//inc(i,1,n)printf("%d ",top[i]);putchar('\n');</span><br>    <span class="hljs-comment">//inc(i,1,n)printf("%d ",end[i]);putchar('\n');</span><br>    root=build(<span class="hljs-number">1</span>,n);<br>    one.n=<span class="hljs-number">2</span>;one.m=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">while</span>(m--)&#123;<br>	<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%s"</span>,_s);_x=read();<br>	<span class="hljs-keyword">if</span>(_s[<span class="hljs-number">0</span>]==<span class="hljs-string">'M'</span>)&#123;<br>	    _y=read();ch(_x);<br>	&#125;<span class="hljs-keyword">else</span>&#123;<br>	    _y=id[end[_x]];_x=id[_x];<br>	    mat ans=root-&gt;sum()*one;<br>	    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lld\n"</span>,ans.a[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]);<br>	&#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/DP/" rel="tag"><i class="fas fa-tags"></i>DP</a>
+        
+        <a class="post-tag button" href="/tags/树链剖分/" rel="tag"><i class="fas fa-tags"></i>树链剖分</a>
+        
+        <a class="post-tag button" href="/tags/STL/" rel="tag"><i class="fas fa-tags"></i>STL</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/luogu4719/" rel="next" title="luogu4719(动态dp)"><i class="fas fa-angle-left"></i><span class="nav-title">luogu4719(动态dp)</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+      <a href="/gym101982I/" rel="prev" title="PNCR-I(贪心+斜率优化)"><span class="nav-title">PNCR-I(贪心+斜率优化)</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </nav>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  <script defer id="dsq-count-scr" src="//qkoqhh.disqus.com/count.js"></script>
+  
+  <div id="disqus_thread" class="disqus_thread"></div>
+  <script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = "http://yoursite.com/bzoj5210/";
+    this.page.identifier = "bzoj5210/";
+  };
+  (function() {
+    var d = document, s = d.createElement("script");
+    s.src = "https://qkoqhh.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  
+  
+</div>
+
+
+
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/avatar.jpg" alt="qkoqhh">
+  
+  <h1 class="author-name">qkoqhh</h1>
+  <h2 class="author-description">已陷入幻想</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">归档</div>
+      <div><a href="/archives/">169</a></div>
+    </div>
+    
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">31</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#题目链接"><span class="toc-text">题目链接</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#题解"><span class="toc-text">题解</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#代码"><span class="toc-text">代码</span></a></li></ol></div>
+    </div>
+    
+    
+    
+    
+    <hr>
+    <div class="blogroll sidebar-item">
+      <div><i class="fas fa-link"></i>单向膜拜</div>
+      <ul>
+        
+        <li><i class="fas fa-link"></i><a href="http://arch0n.sumblog.cn" target="_blank">Arch0n</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://blog.csdn.net/CreationAugust" target="_blank">CreationAugust</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://101.132.170.22/" target="_blank">fffasttime</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://www.cnblogs.com/greenty1208/" target="_blank">Greenty_Q</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://www.cnblogs.com/JSZX11556/" target="_blank">JSZX11556</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://shijieyywd.com" target="_blank">shijieyywd</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://www.cnblogs.com/wang9897/" target="_blank">wang9897</a></li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">qkoqhh</span><span class="year"><i class="far fa-copyright"></i>2017 - 2020</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
+        </div>
+        
+        <div class="busuanzi">
+          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="站点点击量" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="站点用户数" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="页面点击量" aria-hidden="false"></span></span>
+        </div>
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- 代码块复制功能 -->
+  <script type="text/javascript" src="/js/clipboard.min.js"></script>  
+  <script type="text/javascript" src="/js/clipboard-use.js"></script>
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left","width":300,"height":450},"mobile":{"show":true},"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"react":{"opacity":1},"log":false});</script></body>
+</html>

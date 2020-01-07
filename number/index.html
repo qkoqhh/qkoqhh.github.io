@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    
+    <meta name="keywords" content="Program, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="qkoqhh" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    
+    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ["$","$"], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+      }
+    });
+    </script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += " has-jax";
+      }
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+
+
+    <title>组合数学笔记 | qkoqhh - 什么都没有</title>
+  </head>
+  <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">qkoqhh</a></h1>
+        <h2 class="subtitle">什么都没有</h2>
+      </div>
+      
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo">
+      </div>
+      
+    </div>
+    <nav id="nav" class="nav">
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
+      <ul id="menu" role="menubar" aria-hidden="false">
+        
+        <li role="menuitem"><a href="/">首页</a></li>
+        
+        <li role="menuitem"><a href="/archives/">归档</a></li>
+        
+        <li role="menuitem"><a href="/tags/">标签</a></li>
+        
+        <li role="menuitem"><a href="/guo/">无限填坑进行曲</a></li>
+        
+        <li role="menuitem"><a href="/about/">关于</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="page">
+  
+  <article class="article post card animate" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/number/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="qkoqhh">
+       <meta itemprop="description" content="已陷入幻想">
+       <meta itemprop="image" content="/images/avatar.jpg">
+      </span>
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="qkoqhh">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">组合数学笔记</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-07-11T20:11:00+08:00">2019-07-11 20:11:00</time></span>
+        </span>
+        
+        
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-comment-count">
+          <i class="far fa-comments"></i><span><a href="/number/#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="number/" itemprop="commentCount"></span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://rqy.moe/Algorithms/generating-function/" target="_blank" rel="noopener">https://rqy.moe/Algorithms/generating-function/</a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>题做的少，也不造组合数学主要考点在哪，就在这里记一下(东抄抄西摘摘)自己不会且感觉比较有价值的东西</p>
+<p><del>如果被rqy发现他不会打窝把</del></p>
+<h2 id="二项式反演"><a href="#二项式反演" class="headerlink" title="二项式反演"></a>二项式反演</h2><p>这个知识点本身不难。。只是窝的题做得比较少。。</p>
+<h3 id="基本内容"><a href="#基本内容" class="headerlink" title="基本内容"></a>基本内容</h3><p>如果</p>
+<script type="math/tex; mode=display">
+g(n)=\sum_{i=0}^n\binom{n}{i}f(i)</script><p>则</p>
+<script type="math/tex; mode=display">
+f(n)=\sum_{i=0}^n(-1)^{n-i}\binom nif(i)</script><h4 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h4><p>基于 $\sum(-1)^i \binom ni=[n=1]$ ，有</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+f(n)=&\sum_{i=0}^n[n=i]\binom nif(i)
+\\=&\sum_{i=0}^n\sum_{j=0}^{n-i}(-1)^j\binom{n-i}jf(i)
+\\=&\sum_{j=0}^n(-1)^j\sum_{i=0}^{n-j}\binom ni\binom{n-i}jf(i)
+\\=&\sum_{j=0}^n(-1)^j\sum_{i=0}^{n-j}\binom nj \binom {n-j}if(i)
+\\=&\sum_{j=0}^n(-1)^j\binom njg(n-j)
+\\=&\sum_{j=0}^n (-1)^{n-j}\binom njg(j)
+\end{aligned}</script><h3 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h3><p>这个公式有一个更优美的形式<del>(但是好像没什么卵用)</del></p>
+<p>将 $f(n)\rightarrow(-1)^nf(n)$ ，可以得到</p>
+<p>若</p>
+<script type="math/tex; mode=display">
+g(n)=\sum_{i=0}^n(-1)^i\binom nif(i)</script><p>则</p>
+<script type="math/tex; mode=display">
+f(n)=\sum_{i=0}^n(-1)^i\binom nig(i)</script><p><br></p>
+<p>还有另一个方向的二项式反演：</p>
+<p>若</p>
+<script type="math/tex; mode=display">
+g(n)=\sum_{i\ge n}(-1)^{i}\binom in f(i)</script><p>则</p>
+<script type="math/tex; mode=display">
+f(n)=\sum_{i\ge n}(-1)^{i}\binom in g(i)</script><h4 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h4><p>好像网上都没有找到证明，这里就写一下。。</p>
+<p>同样的方法</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+f(n)=&\sum_{i\ge n}(-1)^{i-n}\binom in[i=n]f(i)
+\\=&\sum_{i\ge n}(-1)^{i-n}\binom in\sum_{j=0}^{i-n}(-1)^j\binom{i-n}j f(i)
+\\=&\sum_{j\ge 0}\sum_{i\ge n+j}(-1)^{i-n}(-1)^j\binom in\binom{i-n}jf(i)
+\\=&\sum_{j\ge n}\sum_{i\ge j}(-1)^{i-n}(-1)^{j-n} \binom in\binom{i-n}{j-n}f(i)
+\\=&\sum_{j\ge n}\sum_{i\ge j}(-1)^{i+j}\binom ij \binom jnf(i)
+\\=&\sum_{j\ge n}(-1)^j\binom jn\sum_{i\ge j}(-1)^i\binom ijf(i)
+\\=&\sum_{j\ge n}(-1)^j\binom jng(j)
+\end{aligned}</script><p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id="生成函数"><a href="#生成函数" class="headerlink" title="生成函数"></a>生成函数</h2><h3 id="普通型生成函数-OGF"><a href="#普通型生成函数-OGF" class="headerlink" title="普通型生成函数(OGF)"></a>普通型生成函数(OGF)</h3><p>普通型生成函数($ordinary$​ $generating$ $function$，下称 $OGF$ )的形式大致如下：</p>
+<p>对数列 $f=f_0,f_1,f_2… $ ，其生成函数为</p>
+<script type="math/tex; mode=display">
+F(x)=\sum_{k=1}^{\infty}f_kx^k</script><h4 id="常见的-OGF"><a href="#常见的-OGF" class="headerlink" title="常见的 $OGF$"></a>常见的 $OGF$</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>数列</strong></th>
+<th><strong>OGF</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$<1,0,0,...>$</1,0,0,...></td>
+<td>$1$</td>
+</tr>
+<tr>
+<td style="text-align:left">$<1,1,1,...>$</1,1,1,...></td>
+<td>$\frac{1}{1-x}$</td>
+</tr>
+<tr>
+<td style="text-align:left">$<1,2,3,...>$</1,2,3,...></td>
+<td>$\frac{1}{(1-x)^2}$</td>
+</tr>
+<tr>
+<td style="text-align:left">$<1,-1,1,-1,...>$</1,-1,1,-1,...></td>
+<td>$\frac{1}{1+x}$</td>
+</tr>
+<tr>
+<td style="text-align:left">$<1,2,1,0,0,...>$</1,2,1,0,0,...></td>
+<td>$(1+x)^2$</td>
+</tr>
+<tr>
+<td style="text-align:left">$<1,4,6,4,1,0,0,...>$</1,4,6,4,1,0,0,...></td>
+<td>$(1+x)^3$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="OGF-的性质"><a href="#OGF-的性质" class="headerlink" title="$OGF$ 的性质"></a>$OGF$ 的性质</h4><script type="math/tex; mode=display">
+\begin{aligned}
+\alpha F(x)+\beta G(x)&=\sum_n(\alpha f_n+\beta g_n)x^n\\
+x^mF(x)&=\sum_n[n\geq m]f_{n-m}x^n\\
+\frac{F(x)-\sum_{i=0}^{m-1}f_ix^i}{x^m}&=\sum_nf_{n+m}x^n\\
+F(cx)&=\sum_nc^nf_nx^n\\
+F^\prime(x)&=\sum_n(n+1)f_{n+1}x^n\\
+\int_0^xF(t)\mathrm{d}t&=\sum_n[n>0]\frac{f_{n-1}}nx^n\\
+F(x)G(x)&=\sum_n\left(\sum_{i=0}^nf_ig_{n-i}\right)x^n
+\end{aligned}</script><p>性质都是多项式的性质，比较好记</p>
+<p><br></p>
+<p><br></p>
+<h3 id="指数型生成函数-EGF"><a href="#指数型生成函数-EGF" class="headerlink" title="指数型生成函数(EGF)"></a>指数型生成函数(EGF)</h3><p>指数型生成函数( $exponential$ $generating$ $function$，简称 $EGF$ )的形式大致如下：</p>
+<p>对数列 $f=<f_0,f_1,f_2...>$ ，其生成函数为</f_0,f_1,f_2...></p>
+<script type="math/tex; mode=display">
+F(x)=\sum_{k=1}^{\infty}f_k\frac{x^k}{n!}</script><p>其意义体现在其乘法操作上： </p>
+<script type="math/tex; mode=display">
+F(x)G(x)=\sum_n\left(\sum_{i=0}^n\binom nif_ig_{n-i}\right)x^i</script><p> 多出来的 $\binom{n}{i}$ 告诉我们它适用于排列的计算（相对于 $OGF$ 的普通卷积对应组合）。</p>
+<h4 id="常见的-EGF"><a href="#常见的-EGF" class="headerlink" title="常见的 $EGF$"></a>常见的 $EGF$</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>数列</th>
+<th>EGF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$<1,1,1,...>$</1,1,1,...></td>
+<td>$e^x$</td>
+</tr>
+<tr>
+<td>$<0,1,2,...>$</0,1,2,...></td>
+<td>$xe^x$</td>
+</tr>
+<tr>
+<td>$<1,c,c^2,...>$</1,c,c^2,...></td>
+<td>$e^{cx}$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="EGF-的性质"><a href="#EGF-的性质" class="headerlink" title="$EGF$ 的性质"></a>$EGF$ 的性质</h4><script type="math/tex; mode=display">
+\begin{aligned}
+\alpha F(x)+\beta G(x)&=\sum_n(\alpha f_n+\beta g_n)\frac{x^n}{n!}\\
+x^mF(x)&=\sum_n[n\geq m]n^{\underline m}f_{n-m}\frac{x^n}{n!}\\
+\frac{F(x)-\sum_{i=0}^{m-1}f_ix^i}{x^m}&=\sum_n\frac1{(n+m)^{\underline m}}f_{n+m}\frac{x^n}{n!}\\
+F(cx)&=\sum_nc^nf_n\frac{x^n}{n!}\\
+F^\prime(x)&=\sum_nf_{n+1}\frac{x^n}{n!}\\
+\int_0^xF(t)\mathrm{d}t&=\sum_n[n>0]f_{n-1}\frac{x^n}{n!}\\
+\sum_{n}n^{\underline k}\frac{x^n}{n!}&=x^ke^x \\
+\sum_{n}(n-1)!\frac{x^n}{n!}&=\ln \frac{1}{1-x} \\
+F(x)G(x)&=\sum_n\left(\sum_{i=0}^n\binom nif_ig_{n-i}\right)\frac{x^n}{n!}
+\end{aligned}</script><p>看起来比较陌生了，这个得多熟悉熟悉</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id="斯特林数"><a href="#斯特林数" class="headerlink" title="斯特林数"></a>斯特林数</h2><h3 id="第一类斯特林数"><a href="#第一类斯特林数" class="headerlink" title="第一类斯特林数"></a>第一类斯特林数</h3><p>第一类斯特林数是指将 $n$ 个元素划分成为 $m$ 个<strong>轮换</strong>(或者环)的方案数，记作 $S_1(n,m)$ ，具体数学记作 $n\brack m$</p>
+<h4 id="递推公式"><a href="#递推公式" class="headerlink" title="递推公式"></a>递推公式</h4><script type="math/tex; mode=display">
+{n\brack m}={n-1\brack m-1}+(n-1){n-1\brack m}</script><p><strong>证明：</strong></p>
+<p>考虑组合意义，当把第 $n$ 个数加入时，要么另开一个环，要么加到已有的环中，有 $n$ 个位置可以插入</p>
+<p><br></p>
+<h4 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h4><p>这个求法的复杂度是 $O(n^2)$ 的，网上有一个倍增求第一类斯特林数的复杂度为 $O(nlogn)$ </p>
+<p>构造 $F_n(x)=\sum {n\brack k}x^k$</p>
+<p>然后由斯特林数的递推公式可得</p>
+<script type="math/tex; mode=display">
+F_n(x)=xF_{n-1}(x)+(n-1)F_{n-1}(x)</script><p>所以有</p>
+<script type="math/tex; mode=display">
+F_n(x)=\prod_{i=0}^{n-1}(x+i)</script><p>那么考虑分治处理，假设求出了前 $n$ 项系数 $a<em>0…a</em>{n-1}$ ，先求后 $n$ 项，有</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\prod_{i=n+1}^{2n-1}(x+i)&=\prod_{i=0}^{n-1}(x+n+i)
+\\&=\sum_{i=0}^{n-1}a_i(x+n)^i
+\\&=\sum_{i=0}^{n-1}a_i\sum_{j=0}^{i}\binom{i}{j}n^{i-j}x^j
+\\&=\sum_{i=0}^{n-1}\sum_{j=i}^{n-1}a_j\frac{j!}{i!(j-i)!}n^{j-i}x^i
+\\&=\sum_{i=0}^{n-1}\frac{1}{i!}\sum_{j=i}^{n-1}a_jj!\frac{n^{j-i}}{(j-i)!}x^i
+\end{aligned}</script><p>对于差固定的卷积，我们可以对其中一个序列进行翻转，就变成普通的卷积了，然后再平移一下即可。。</p>
+<p><a href="/cf960G">具体代码</a></p>
+<h4 id="部分公式"><a href="#部分公式" class="headerlink" title="部分公式"></a>部分公式</h4><script type="math/tex; mode=display">
+x^{\bar{n}}=\sum_{k=1}^n{n\brack k}x^k\\
+\sum_{k=0}^n{n\brack k}=n!</script><p><br></p>
+<p><br></p>
+<h3 id="第二类斯特林数"><a href="#第二类斯特林数" class="headerlink" title="第二类斯特林数"></a>第二类斯特林数</h3><p>第二类斯特林数是指将 $n$ 个元素划分成为 $m$ 个<strong>集合</strong>的方案数，记作 $S_2(n,m)$ ， 具体数学记作 $n\brace m$ </p>
+<h4 id="递推公式-1"><a href="#递推公式-1" class="headerlink" title="递推公式"></a>递推公式</h4><script type="math/tex; mode=display">
+{n\brace m}={n-1\brace m-1}+m{n-1\brace m}</script><p><strong>证明：</strong></p>
+<p>考虑组合意义，当把第 $n$ 个数加入时，要么另开一个集合，要么加到已有的环中，有 $m$ 个集合可以加入</p>
+<p><br></p>
+<h4 id="求法-1"><a href="#求法-1" class="headerlink" title="求法"></a>求法</h4><p>先证下式：</p>
+<script type="math/tex; mode=display">
+{n\brace m}=\frac{1}{m!}\sum_{k=0}^m\binom{m}{k}(-1)^k(m-k)^n</script><p><strong>证明：</strong></p>
+<p>考虑枚举空集 $k$ 的个数，容斥一下即可得到全为非空集的方案数</p>
+<p><br></p>
+<p>然后对他进行变形，变成卷积形式</p>
+<script type="math/tex; mode=display">
+{n\brace m}=\sum_{k=0}^{m}\frac{(-1)^k}{k!}\frac{(m-k)^n}{(m-k)!}</script><p>然后上 $FFT$ 就可以了</p>
+<p><br></p>
+<h4 id="部分公式-1"><a href="#部分公式-1" class="headerlink" title="部分公式"></a>部分公式</h4><script type="math/tex; mode=display">
+x^n=\sum_{k=1}^{n}{n\brace k}x^{\underline{k}}</script><p>关于斯特林数其实具体数学里面还有很多公式，不过窝还没能吸收qaq</p>
+<p><br><br><br><br></p>
+<h2 id="五边形数"><a href="#五边形数" class="headerlink" title="五边形数"></a>五边形数</h2><p>五边形数就是从五边形里面弄出来的一个数列，感觉没什么几何意义</p>
+<p>五边形数列为 ${\frac{n(3n-1)}{2} }$</p>
+<p>广义的五边形数是由 $\frac{n(3n-1)}{2}$ 和 $\frac{n(3n+1)}{2}$ 组成的</p>
+<p>然后有一个经典的多项式，是组合数学上的欧拉函数 </p>
+<script type="math/tex; mode=display">
+\phi(x)=\prod_{i=1}^\infty (1-x^i)</script><p>有一个结论</p>
+<script type="math/tex; mode=display">
+\phi(x)=1+\sum_k (-1)^kx^{\frac{k(3k-1)}{2} }+\sum_k(-1)^kx^{\frac{k(3k+1)}{2} }</script><p>也就是刚好是在广义五边形数上有系数</p>
+<p>这个结论就非常舒服了，能够带来不少便利(但是证明很无聊，这里就不给出了)</p>
+<p>​    </p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/组合数学/" rel="tag"><i class="fas fa-tags"></i>组合数学</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/hdu6397/" rel="next" title="hdu6397(生成函数/容斥原理)"><i class="fas fa-angle-left"></i><span class="nav-title">hdu6397(生成函数/容斥原理)</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+      <a href="/cf960G/" rel="prev" title="cf960G(DP->第一类斯特林数)"><span class="nav-title">cf960G(DP->第一类斯特林数)</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </nav>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  <script defer id="dsq-count-scr" src="//qkoqhh.disqus.com/count.js"></script>
+  
+  <div id="disqus_thread" class="disqus_thread"></div>
+  <script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = "http://yoursite.com/number/";
+    this.page.identifier = "number/";
+  };
+  (function() {
+    var d = document, s = d.createElement("script");
+    s.src = "https://qkoqhh.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  
+  
+</div>
+
+
+
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/avatar.jpg" alt="qkoqhh">
+  
+  <h1 class="author-name">qkoqhh</h1>
+  <h2 class="author-description">已陷入幻想</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">归档</div>
+      <div><a href="/archives/">169</a></div>
+    </div>
+    
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">31</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#参考链接"><span class="toc-text">参考链接</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#二项式反演"><span class="toc-text">二项式反演</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#基本内容"><span class="toc-text">基本内容</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#证明"><span class="toc-text">证明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#推论"><span class="toc-text">推论</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#证明-1"><span class="toc-text">证明</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#生成函数"><span class="toc-text">生成函数</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#普通型生成函数-OGF"><span class="toc-text">普通型生成函数(OGF)</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#常见的-OGF"><span class="toc-text">常见的 $OGF$</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#OGF-的性质"><span class="toc-text">$OGF$ 的性质</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#指数型生成函数-EGF"><span class="toc-text">指数型生成函数(EGF)</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#常见的-EGF"><span class="toc-text">常见的 $EGF$</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#EGF-的性质"><span class="toc-text">$EGF$ 的性质</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#斯特林数"><span class="toc-text">斯特林数</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#第一类斯特林数"><span class="toc-text">第一类斯特林数</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#递推公式"><span class="toc-text">递推公式</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#求法"><span class="toc-text">求法</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#部分公式"><span class="toc-text">部分公式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#第二类斯特林数"><span class="toc-text">第二类斯特林数</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#递推公式-1"><span class="toc-text">递推公式</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#求法-1"><span class="toc-text">求法</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#部分公式-1"><span class="toc-text">部分公式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#五边形数"><span class="toc-text">五边形数</span></a></li></ol></div>
+    </div>
+    
+    
+    
+    
+    <hr>
+    <div class="blogroll sidebar-item">
+      <div><i class="fas fa-link"></i>单向膜拜</div>
+      <ul>
+        
+        <li><i class="fas fa-link"></i><a href="http://arch0n.sumblog.cn" target="_blank">Arch0n</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://blog.csdn.net/CreationAugust" target="_blank">CreationAugust</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://101.132.170.22/" target="_blank">fffasttime</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://www.cnblogs.com/greenty1208/" target="_blank">Greenty_Q</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://www.cnblogs.com/JSZX11556/" target="_blank">JSZX11556</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://shijieyywd.com" target="_blank">shijieyywd</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="http://www.cnblogs.com/wang9897/" target="_blank">wang9897</a></li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">qkoqhh</span><span class="year"><i class="far fa-copyright"></i>2017 - 2020</span><span class="creative-commons"><i class="fab fa-creative-commons"></i><a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">BY-NC 4.0</a></span>
+        </div>
+        
+        <div class="busuanzi">
+          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="站点点击量" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="站点用户数" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="页面点击量" aria-hidden="false"></span></span>
+        </div>
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- 代码块复制功能 -->
+  <script type="text/javascript" src="/js/clipboard.min.js"></script>  
+  <script type="text/javascript" src="/js/clipboard-use.js"></script>
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left","width":300,"height":450},"mobile":{"show":true},"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"react":{"opacity":1},"log":false});</script></body>
+</html>
