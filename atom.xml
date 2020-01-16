@@ -5,9 +5,9 @@
   <subtitle>什么都没有</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="/child/"/>
   <updated>2020-01-07T16:20:35.769Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>/child/</id>
   
   <author>
     <name>qkoqhh</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>gym102428F(DP)</title>
-    <link href="http://yoursite.com/gym102428F/"/>
-    <id>http://yoursite.com/gym102428F/</id>
+    <link href="/child/gym102428F/"/>
+    <id>/child/gym102428F/</id>
     <published>2019-12-13T07:32:15.000Z</published>
     <updated>2020-01-07T16:20:35.769Z</updated>
     
@@ -36,14 +36,14 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>uoj185(DP+容斥)</title>
-    <link href="http://yoursite.com/uoj185/"/>
-    <id>http://yoursite.com/uoj185/</id>
+    <link href="/child/uoj185/"/>
+    <id>/child/uoj185/</id>
     <published>2019-11-16T01:51:11.000Z</published>
     <updated>2019-11-16T02:41:43.678Z</updated>
     
@@ -60,16 +60,16 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
-      <category term="组合数学" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="/child/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>luogu4336(矩阵树定理+容斥)</title>
-    <link href="http://yoursite.com/luogu4336/"/>
-    <id>http://yoursite.com/luogu4336/</id>
+    <link href="/child/luogu4336/"/>
+    <id>/child/luogu4336/</id>
     <published>2019-11-13T12:56:14.000Z</published>
     <updated>2019-11-13T13:33:00.626Z</updated>
     
@@ -86,16 +86,16 @@
     </summary>
     
     
-      <category term="组合数学" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="/child/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="矩阵树定理" scheme="http://yoursite.com/tags/%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86/"/>
+      <category term="矩阵树定理" scheme="/child/tags/%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>loj2002(倍增)</title>
-    <link href="http://yoursite.com/loj2002/"/>
-    <id>http://yoursite.com/loj2002/</id>
+    <link href="/child/loj2002/"/>
+    <id>/child/loj2002/</id>
     <published>2019-11-13T10:05:04.000Z</published>
     <updated>2019-11-13T10:07:42.933Z</updated>
     
@@ -112,16 +112,16 @@
     </summary>
     
     
-      <category term="组合数学" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="/child/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="unclassified" scheme="http://yoursite.com/tags/unclassified/"/>
+      <category term="unclassified" scheme="/child/tags/unclassified/"/>
     
   </entry>
   
   <entry>
     <title>luogu2150(状压DP)</title>
-    <link href="http://yoursite.com/luogu2150/"/>
-    <id>http://yoursite.com/luogu2150/</id>
+    <link href="/child/luogu2150/"/>
+    <id>/child/luogu2150/</id>
     <published>2019-11-07T07:20:04.000Z</published>
     <updated>2019-11-07T07:23:54.241Z</updated>
     
@@ -138,14 +138,14 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>luogu5616(状压DP)</title>
-    <link href="http://yoursite.com/luogu5616/"/>
-    <id>http://yoursite.com/luogu5616/</id>
+    <link href="/child/luogu5616/"/>
+    <id>/child/luogu5616/</id>
     <published>2019-11-05T02:47:13.000Z</published>
     <updated>2019-11-05T02:51:22.751Z</updated>
     
@@ -162,14 +162,14 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>uoj104(wqs二分+斜率优化)</title>
-    <link href="http://yoursite.com/uoj104/"/>
-    <id>http://yoursite.com/uoj104/</id>
+    <link href="/child/uoj104/"/>
+    <id>/child/uoj104/</id>
     <published>2019-11-02T08:56:54.000Z</published>
     <updated>2019-11-02T09:45:07.468Z</updated>
     
@@ -186,14 +186,14 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>cf1250G(贪心)</title>
-    <link href="http://yoursite.com/cf1250G/"/>
-    <id>http://yoursite.com/cf1250G/</id>
+    <link href="/child/cf1250G/"/>
+    <id>/child/cf1250G/</id>
     <published>2019-11-02T01:42:18.000Z</published>
     <updated>2019-11-02T02:16:19.945Z</updated>
     
@@ -210,14 +210,14 @@
     </summary>
     
     
-      <category term="贪心" scheme="http://yoursite.com/tags/%E8%B4%AA%E5%BF%83/"/>
+      <category term="贪心" scheme="/child/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
   <entry>
     <title>cf1250E(二分图)</title>
-    <link href="http://yoursite.com/cf1250E/"/>
-    <id>http://yoursite.com/cf1250E/</id>
+    <link href="/child/cf1250E/"/>
+    <id>/child/cf1250E/</id>
     <published>2019-11-02T01:22:08.000Z</published>
     <updated>2019-11-02T01:43:33.678Z</updated>
     
@@ -234,14 +234,14 @@
     </summary>
     
     
-      <category term="unclassified" scheme="http://yoursite.com/tags/unclassified/"/>
+      <category term="unclassified" scheme="/child/tags/unclassified/"/>
     
   </entry>
   
   <entry>
     <title>luogu5392(矩阵快速幂)</title>
-    <link href="http://yoursite.com/luogu5392/"/>
-    <id>http://yoursite.com/luogu5392/</id>
+    <link href="/child/luogu5392/"/>
+    <id>/child/luogu5392/</id>
     <published>2019-10-28T09:41:13.000Z</published>
     <updated>2019-10-28T09:50:13.547Z</updated>
     
@@ -258,14 +258,14 @@
     </summary>
     
     
-      <category term="unclassified" scheme="http://yoursite.com/tags/unclassified/"/>
+      <category term="unclassified" scheme="/child/tags/unclassified/"/>
     
   </entry>
   
   <entry>
     <title>loj2774(基环树DP)</title>
-    <link href="http://yoursite.com/loj2774/"/>
-    <id>http://yoursite.com/loj2774/</id>
+    <link href="/child/loj2774/"/>
+    <id>/child/loj2774/</id>
     <published>2019-10-28T07:14:35.000Z</published>
     <updated>2019-10-28T07:19:27.576Z</updated>
     
@@ -282,14 +282,14 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>luogu4495(背包DP)</title>
-    <link href="http://yoursite.com/luogu4495/"/>
-    <id>http://yoursite.com/luogu4495/</id>
+    <link href="/child/luogu4495/"/>
+    <id>/child/luogu4495/</id>
     <published>2019-10-27T13:57:54.000Z</published>
     <updated>2019-10-27T14:01:21.391Z</updated>
     
@@ -306,14 +306,14 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>luogu4298(最大反链)</title>
-    <link href="http://yoursite.com/luogu4298/"/>
-    <id>http://yoursite.com/luogu4298/</id>
+    <link href="/child/luogu4298/"/>
+    <id>/child/luogu4298/</id>
     <published>2019-10-13T14:21:33.000Z</published>
     <updated>2019-10-13T16:06:00.398Z</updated>
     
@@ -330,14 +330,14 @@
     </summary>
     
     
-      <category term="二分图" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+      <category term="二分图" scheme="/child/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
     
   </entry>
   
   <entry>
     <title>bzoj2138(hall定理+线段树)</title>
-    <link href="http://yoursite.com/bzoj2138/"/>
-    <id>http://yoursite.com/bzoj2138/</id>
+    <link href="/child/bzoj2138/"/>
+    <id>/child/bzoj2138/</id>
     <published>2019-10-06T11:56:07.000Z</published>
     <updated>2019-10-06T12:02:10.752Z</updated>
     
@@ -354,16 +354,16 @@
     </summary>
     
     
-      <category term="二分图" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+      <category term="二分图" scheme="/child/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
     
-      <category term="线段树" scheme="http://yoursite.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+      <category term="线段树" scheme="/child/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   
   <entry>
     <title>arc076F(hall定理+线段树)</title>
-    <link href="http://yoursite.com/arc076F/"/>
-    <id>http://yoursite.com/arc076F/</id>
+    <link href="/child/arc076F/"/>
+    <id>/child/arc076F/</id>
     <published>2019-10-04T09:40:44.000Z</published>
     <updated>2019-10-04T09:53:48.391Z</updated>
     
@@ -380,16 +380,16 @@
     </summary>
     
     
-      <category term="二分图" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+      <category term="二分图" scheme="/child/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
     
-      <category term="线段树" scheme="http://yoursite.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+      <category term="线段树" scheme="/child/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   
   <entry>
     <title>loj6062(hall定理+线段树)</title>
-    <link href="http://yoursite.com/loj6062/"/>
-    <id>http://yoursite.com/loj6062/</id>
+    <link href="/child/loj6062/"/>
+    <id>/child/loj6062/</id>
     <published>2019-10-04T07:22:13.000Z</published>
     <updated>2019-10-04T08:32:54.431Z</updated>
     
@@ -406,16 +406,16 @@
     </summary>
     
     
-      <category term="二分图" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+      <category term="二分图" scheme="/child/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
     
-      <category term="线段树" scheme="http://yoursite.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+      <category term="线段树" scheme="/child/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   
   <entry>
     <title>uoj80(KM算法模板)</title>
-    <link href="http://yoursite.com/uoj80/"/>
-    <id>http://yoursite.com/uoj80/</id>
+    <link href="/child/uoj80/"/>
+    <id>/child/uoj80/</id>
     <published>2019-10-03T07:40:36.000Z</published>
     <updated>2019-10-03T09:22:58.694Z</updated>
     
@@ -432,14 +432,14 @@
     </summary>
     
     
-      <category term="二分图" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+      <category term="二分图" scheme="/child/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
     
   </entry>
   
   <entry>
     <title>gym102059C(DP)</title>
-    <link href="http://yoursite.com/gym102059C/"/>
-    <id>http://yoursite.com/gym102059C/</id>
+    <link href="/child/gym102059C/"/>
+    <id>/child/gym102059C/</id>
     <published>2019-09-30T02:32:12.000Z</published>
     <updated>2019-09-30T03:14:22.499Z</updated>
     
@@ -456,14 +456,14 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>luogu4389(多项式指数函数)</title>
-    <link href="http://yoursite.com/luogu4389/"/>
-    <id>http://yoursite.com/luogu4389/</id>
+    <link href="/child/luogu4389/"/>
+    <id>/child/luogu4389/</id>
     <published>2019-09-28T14:22:43.000Z</published>
     <updated>2019-09-28T14:27:36.837Z</updated>
     
@@ -480,16 +480,16 @@
     </summary>
     
     
-      <category term="FFT" scheme="http://yoursite.com/tags/FFT/"/>
+      <category term="FFT" scheme="/child/tags/FFT/"/>
     
-      <category term="组合数学" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="/child/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>luogu2159(DP+容斥)</title>
-    <link href="http://yoursite.com/luogu2159/"/>
-    <id>http://yoursite.com/luogu2159/</id>
+    <link href="/child/luogu2159/"/>
+    <id>/child/luogu2159/</id>
     <published>2019-09-28T08:46:05.000Z</published>
     <updated>2019-09-28T08:53:45.373Z</updated>
     
@@ -506,9 +506,9 @@
     </summary>
     
     
-      <category term="DP" scheme="http://yoursite.com/tags/DP/"/>
+      <category term="DP" scheme="/child/tags/DP/"/>
     
-      <category term="组合数学" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="/child/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
