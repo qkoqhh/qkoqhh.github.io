@@ -195,7 +195,7 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>给定 $n$ 个点 $m$ 条边的图 $(n\le900,m\le150000)$ ，问去掉每条边 $<x,y>$ 之后，$x$ 到 $y$ 最短路，边权均为 $1$</x,y></p>
+      <h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>给定 $n$ 个点 $m$ 条边的图 $(n\le900,m\le150000)$ ，问去掉每条边 $\lt x,y\gt$ 之后，$x$ 到 $y$ 最短路，边权均为 $1$</p>
 <h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>考虑 $u$ 的最短路径树，去掉边 $<u,v>$ 之后只影响被边 $<u,v>$ 支配的点，初步确定是 $v$ 的子树，此时到 $v$ 的最短距离无非是从其他子树转移过来，所以可以对 $v$ 的子树反向做 $bfs$ ，然后枚举从其他子树过渡到该子树的边就可以了。。复杂度为 $O(nm)$</u,v></u,v></p>
 <p>复杂度还是比较危险的，事实上也 $T$ 了，需要卡卡常。。</p>
 <ul>
