@@ -368,9 +368,9 @@
       
         <tags>
             
-            <tag> 组合数学 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 组合数学 </tag>
             
         </tags>
       
@@ -661,9 +661,9 @@
       
         <tags>
             
-            <tag> 组合数学 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 组合数学 </tag>
             
         </tags>
       
@@ -1116,9 +1116,9 @@
       
         <tags>
             
-            <tag> DP </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> DP </tag>
             
             <tag> 图论 </tag>
             
@@ -1177,9 +1177,9 @@
       
         <tags>
             
-            <tag> 组合数学 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 组合数学 </tag>
             
         </tags>
       
@@ -1495,9 +1495,9 @@
       
         <tags>
             
-            <tag> 组合数学 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 组合数学 </tag>
             
         </tags>
       
@@ -1535,9 +1535,9 @@
       
         <tags>
             
-            <tag> 组合数学 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 组合数学 </tag>
             
         </tags>
       
@@ -2450,9 +2450,9 @@
       
         <tags>
             
-            <tag> 数论 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 数论 </tag>
             
         </tags>
       
@@ -2471,9 +2471,9 @@
       
         <tags>
             
-            <tag> 分治 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 分治 </tag>
             
         </tags>
       
@@ -2532,9 +2532,9 @@
       
         <tags>
             
-            <tag> 分治 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 分治 </tag>
             
         </tags>
       
@@ -2553,9 +2553,9 @@
       
         <tags>
             
-            <tag> 组合数学 </tag>
-            
             <tag> FFT </tag>
+            
+            <tag> 组合数学 </tag>
             
         </tags>
       
@@ -2633,9 +2633,9 @@
       
         <tags>
             
-            <tag> BSGS </tag>
-            
             <tag> 数论 </tag>
+            
+            <tag> BSGS </tag>
             
         </tags>
       
@@ -3366,11 +3366,11 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><strong><div class="alert-green"><font size="6">欢迎访问</font></div></strong></p><h1 id="qkoqhh"><a href="#qkoqhh" class="headerlink" title="qkoqhh"></a>qkoqhh</h1><ul><li><p>退役  ACM 选手</p><p>队伍 $1$ ：<strong>生鱼忧患死鱼安乐</strong>  ( <a href="http://www.cnblogs.com/greenty1208/" target="_blank" rel="noopener">$Grennty\_Q$</a> 、 <a href="http://www.cnblogs.com/wang9897/" target="_blank" rel="noopener">$wang9897$</a> )， $2$ 银 $2$ 铜 $1$ 铁<br>队伍 $2$ ：<strong>几何旋律</strong>  ( <a href="http://101.132.170.22/" target="_blank" rel="noopener">$fffasttime$</a> 、 <a href="http://www.cnblogs.com/wang9897/" target="_blank" rel="noopener">$wang9897$</a> )，$5$ 金 $2$ 银 $1$ 铁</p><p>CF Rating: <a href="https://codeforces.com/profile/qkoqhh" target="_blank" rel="noopener">2183</a></p></li><li><p>$XDU$ 本科生 ，专业：网络空间安全</p></li><li><p>$qkoqhh$ 这个名字是高考账号原始密码 _(:3 」∠)_</p></li></ul><p><br></p><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><p>$QQ:1374363741$</p><p>$Email:$ <a href="mailto:qkoqhh@163.com" target="_blank" rel="noopener">$qkoqhh@163.com$</a></p><p><br></p><h1 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h1><p>以前在 <a href="https://blog.csdn.net/qkoqhh" target="_blank" rel="noopener">$CSDN$</a> ，渐渐对 $CSDN$ 各种不适故迁到此地。。</p><p>缺少前端知识所以还有各种缺点，一些坑先了留着。欢迎提出博客出现的种种问题 _(:3 」∠)_</p><p>搭然后这个博客主要是来写写一些题解什么的，退役后可能就拿来写一些学习笔记。</p><p>写文章会尽量按照 <a href="https://loj.ac/article/6" target="_blank" rel="noopener">$LOJ$ 的排版格式</a></p>]]></content>
       
     </entry>
     
@@ -3388,11 +3388,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<p><strong><div class="alert-green"><font size="6">欢迎访问</font></div></strong></p><h1 id="qkoqhh"><a href="#qkoqhh" class="headerlink" title="qkoqhh"></a>qkoqhh</h1><ul><li><p>退役  ACM 选手</p><p>队伍 $1$ ：<strong>生鱼忧患死鱼安乐</strong>  ( <a href="http://www.cnblogs.com/greenty1208/" target="_blank" rel="noopener">$Grennty\_Q$</a> 、 <a href="http://www.cnblogs.com/wang9897/" target="_blank" rel="noopener">$wang9897$</a> )， $2$ 银 $2$ 铜 $1$ 铁<br>队伍 $2$ ：<strong>几何旋律</strong>  ( <a href="http://101.132.170.22/" target="_blank" rel="noopener">$fffasttime$</a> 、 <a href="http://www.cnblogs.com/wang9897/" target="_blank" rel="noopener">$wang9897$</a> )，$5$ 金 $2$ 银 $1$ 铁</p><p>CF Rating: <a href="https://codeforces.com/profile/qkoqhh" target="_blank" rel="noopener">2183</a></p></li><li><p>$XDU$ 本科生 ，专业：网络空间安全</p></li><li><p>$qkoqhh$ 这个名字是高考账号原始密码 _(:3 」∠)_</p></li></ul><p><br></p><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><p>$QQ:1374363741$</p><p>$Email:$ <a href="mailto:qkoqhh@163.com" target="_blank" rel="noopener">$qkoqhh@163.com$</a></p><p><br></p><h1 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h1><p>以前在 <a href="https://blog.csdn.net/qkoqhh" target="_blank" rel="noopener">$CSDN$</a> ，渐渐对 $CSDN$ 各种不适故迁到此地。。</p><p>缺少前端知识所以还有各种缺点，一些坑先了留着。欢迎提出博客出现的种种问题 _(:3 」∠)_</p><p>搭然后这个博客主要是来写写一些题解什么的，退役后可能就拿来写一些学习笔记。</p><p>写文章会尽量按照 <a href="https://loj.ac/article/6" target="_blank" rel="noopener">$LOJ$ 的排版格式</a></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
